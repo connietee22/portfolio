@@ -1,0 +1,26 @@
+// HEADER STYLES-----------------------------------------------//
+
+header {
+	background-color: $darkGrey;
+	color: $white;
+	span {
+		font-size: 4rem;
+		font-weight: 500;
+	}
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	p {
+		font-size: clamp(1.6rem, 1.6vw, 2rem);
+	}
+}
+
+ul {
+	display: flex;
+	li {
+		padding: 10px 15px;
+	}
+}

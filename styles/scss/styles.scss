@@ -1,0 +1,12 @@
+$headingfont: 'Oswald', sans-serif;
+$bodyfont: 'Rambla', sans-serif;
+
+$darkGrey: #333333;
+$black: #1c1c1c;
+$white: #fff;
+$lightGrey: #f7f7f7;
+
+@import 'setup';
+@import 'general';
+@import 'main';
+@import 'mediaQueries';

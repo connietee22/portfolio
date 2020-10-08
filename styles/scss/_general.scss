@@ -1,0 +1,58 @@
+// GENERAL STYLES-----------------------------------------------//
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 1.6rem;
+}
+
+.wrapper {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+// FONT STYLING-----------------------------------------------//
+
+h1,
+h2,
+h3,
+nav,
+span {
+	font-family: $headingfont;
+	text-transform: uppercase;
+}
+
+h4,
+p {
+	font-family: $bodyfont;
+}
+
+h1 {
+	font-size: 5rem;
+	line-height: 0.8;
+	padding-bottom: 10px;
+}
+
+h2 {
+	font-size: 3rem;
+	padding-bottom: 8px;
+}
+
+h3 {
+	font-size: 4rem;
+}
+
+p {
+	font-size: 1.8rem;
+	line-height: 0.85;
+}
