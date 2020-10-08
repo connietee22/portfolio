@@ -1,18 +1,48 @@
 // HEADER STYLES-----------------------------------------------//
 
 header {
-	background-color: $darkGrey;
+	background-color: #023047;
 	color: $white;
+	height: 100vh;
 	span {
-		font-size: 4rem;
+		font-size: 3rem;
 		font-weight: 500;
 	}
+	h1 {
+		padding: bottom;
+	}
+	p {
+		font-size: 2.5rem;
+	}
+}
+
+.headerTextContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+}
+
+.imageContainer {
+	height: 250px;
+	width: 250px;
+	margin-bottom: 25px;
+	img {
+		border-radius: 50%;
+		border: 5px solid #ffb703;
+	}
+}
+
+.isHidden {
+	display: none;
 }
 
 nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 20px 0;
 	p {
 		font-size: clamp(1.6rem, 1.6vw, 2rem);
 	}

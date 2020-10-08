@@ -375,8 +375,8 @@ p {
 
 h1 {
   font-size: 5rem;
-  line-height: 0.8;
-  padding-bottom: 10px;
+  font-weight: 500;
+  padding-bottom: 20px;
 }
 
 h2 {
@@ -394,13 +394,54 @@ p {
 }
 
 header {
-  background-color: #333333;
+  background-color: #023047;
   color: #fff;
+  height: 100vh;
 }
 
 header span {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 500;
+}
+
+header h1 {
+  padding: bottom;
+}
+
+header p {
+  font-size: 2.5rem;
+}
+
+.headerTextContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80vh;
+}
+
+.imageContainer {
+  height: 250px;
+  width: 250px;
+  margin-bottom: 25px;
+}
+
+.imageContainer img {
+  border-radius: 50%;
+  border: 5px solid #ffb703;
+}
+
+.isHidden {
+  display: none;
 }
 
 nav {
@@ -413,6 +454,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px 0;
 }
 
 nav p {
