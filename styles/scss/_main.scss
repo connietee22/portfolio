@@ -1,9 +1,9 @@
 // HEADER STYLES-----------------------------------------------//
 
 header {
-	background-color: #023047;
-	color: $white;
+	background-color: $lightBlue;
 	height: 100vh;
+	min-height: 500px;
 	span {
 		font-size: 3rem;
 		font-weight: 500;
@@ -16,12 +16,64 @@ header {
 	}
 }
 
+.navBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+	p {
+		font-size: clamp(1.6rem, 1.6vw, 2rem);
+	}
+}
+
+// NAV BAR STYLES-----------------------------------------------//
+.hamburger,
+.hamburgerExit {
+	display: none;
+	font-size: 3rem;
+	background-color: inherit;
+	border: 0;
+}
+
+ul {
+	display: flex;
+	li {
+		padding: 10px 15px;
+	}
+}
+
+.hamburgerExit {
+	position: relative;
+	top: 30px;
+	right: 30px;
+	// left: 30px;
+	// left: 90vw;
+}
+
+.show.menu {
+	display: block;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: $white;
+	box-shadow: 0px 0px 2px $darkBlue;
+}
+
+.menu {
+	display: flex;
+}
+
+// HEADER TEXT-----------------------------------------------//
 .headerTextContainer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 80vh;
+	height: 90vh;
+	min-height: 400px;
 }
 
 .imageContainer {
@@ -30,27 +82,50 @@ header {
 	margin-bottom: 25px;
 	img {
 		border-radius: 50%;
-		border: 5px solid #ffb703;
+		border: 10px solid $midBlue;
 	}
+}
+
+.typewriterText {
+	display: inline;
+	text-transform: lowercase;
+	padding-bottom: 60px;
+}
+
+/* The typing effect */
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+.isVisible {
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: 0.15em solid orange; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	animation: typing 2.5s steps(30, end), blink-caret 0.75s step-end infinite;
 }
 
 .isHidden {
 	display: none;
 }
 
-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px 0;
-	p {
-		font-size: clamp(1.6rem, 1.6vw, 2rem);
-	}
+.scrollChevron {
+	text-align: center;
+	font-size: 4rem;
+	padding-bottom: 30px;
 }
 
-ul {
-	display: flex;
-	li {
-		padding: 10px 15px;
-	}
+// ABOUT SECTION-----------------------------------------------//
+
+.about {
+	padding: 70px 0;
+	height: 100vh;
+}
+
+.aboutImageContainer {
 }

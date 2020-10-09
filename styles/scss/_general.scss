@@ -7,6 +7,32 @@ html {
 
 body {
 	font-size: 1.6rem;
+	color: $black;
+}
+
+// skiplink to jump past header
+a.skipLink {
+	position: absolute;
+	top: -1000px;
+	left: -1000px;
+	height: 1px;
+	width: 1px;
+	text-align: left;
+	overflow: hidden;
+}
+
+a.skipLink:active,
+a.skipLink:focus {
+	left: 0;
+	top: 0;
+	width: auto;
+	height: auto;
+	overflow: visible;
+	text-decoration: none;
+	font-weight: 400;
+	color: #fff;
+	background: #6f6f6f;
+	padding: 5px;
 }
 
 .wrapper {
@@ -30,6 +56,7 @@ nav,
 span {
 	font-family: $headingfont;
 	text-transform: uppercase;
+	font-weight: 500;
 }
 
 h4,
@@ -49,10 +76,19 @@ h2 {
 }
 
 h3 {
-	font-size: 4rem;
+	font-size: 3rem;
 }
 
 p {
 	font-size: 1.8rem;
 	line-height: 0.85;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	filter: brightness(75%);
 }

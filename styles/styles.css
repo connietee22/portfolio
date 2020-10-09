@@ -345,6 +345,31 @@ html {
 
 body {
   font-size: 1.6rem;
+  color: #1c1c1c;
+}
+
+a.skipLink {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  height: 1px;
+  width: 1px;
+  text-align: left;
+  overflow: hidden;
+}
+
+a.skipLink:active,
+a.skipLink:focus {
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  text-decoration: none;
+  font-weight: 400;
+  color: #fff;
+  background: #6f6f6f;
+  padding: 5px;
 }
 
 .wrapper {
@@ -366,6 +391,7 @@ nav,
 span {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 h4,
@@ -385,7 +411,7 @@ h2 {
 }
 
 h3 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 p {
@@ -393,10 +419,20 @@ p {
   line-height: 0.85;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%);
+}
+
 header {
-  background-color: #023047;
-  color: #fff;
+  background-color: #8ecae6;
   height: 100vh;
+  min-height: 500px;
 }
 
 header span {
@@ -410,6 +446,66 @@ header h1 {
 
 header p {
   font-size: 2.5rem;
+}
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+
+.navBar p {
+  font-size: clamp(1.6rem, 1.6vw, 2rem);
+}
+
+.hamburger,
+.hamburgerExit {
+  display: none;
+  font-size: 3rem;
+  background-color: inherit;
+  border: 0;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul li {
+  padding: 10px 15px;
+}
+
+.hamburgerExit {
+  position: relative;
+  top: 30px;
+  right: 30px;
+}
+
+.show.menu {
+  display: block;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 2px #023047;
+          box-shadow: 0px 0px 2px #023047;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .headerTextContainer {
@@ -426,7 +522,8 @@ header p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 80vh;
+  height: 90vh;
+  min-height: 400px;
 }
 
 .imageContainer {
@@ -437,38 +534,59 @@ header p {
 
 .imageContainer img {
   border-radius: 50%;
-  border: 5px solid #ffb703;
+  border: 10px solid #219ebc;
+}
+
+.typewriterText {
+  display: inline;
+  text-transform: lowercase;
+  padding-bottom: 60px;
+}
+
+/* The typing effect */
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.isVisible {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  -webkit-animation: typing 2.5s steps(30, end), blink-caret 0.75s step-end infinite;
+          animation: typing 2.5s steps(30, end), blink-caret 0.75s step-end infinite;
 }
 
 .isHidden {
   display: none;
 }
 
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px 0;
+.scrollChevron {
+  text-align: center;
+  font-size: 4rem;
+  padding-bottom: 30px;
 }
 
-nav p {
-  font-size: clamp(1.6rem, 1.6vw, 2rem);
-}
-
-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-ul li {
-  padding: 10px 15px;
+.about {
+  padding: 70px 0;
+  height: 100vh;
 }
 
 @media (max-width: 768px) {
@@ -476,17 +594,48 @@ ul li {
     font-size: calc(5rem * 0.75);
     padding-bottom: 10px;
   }
-  h2 {
-    font-size: calc(3rem * 0.6);
-  }
-  h3 {
-    font-size: calc(4rem * 0.75);
-  }
   p {
     font-size: calc(4rem * 0.6);
   }
-  .illustration {
-    width: 60%;
-    padding-right: 0px;
+  .menu {
+    display: none;
+  }
+  .menu .fullScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f7f7f7;
+    color: #023047;
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hamburger,
+  .hamburgerExit {
+    display: block;
+    text-align: right;
+  }
+  .fullScreen ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 20%;
+  }
+  .menu ul a {
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    padding: 30px;
   }
 }
