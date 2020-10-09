@@ -42,6 +42,21 @@
 		flex-direction: column;
 		align-items: center;
 	}
+
+	// SKILLS 768PX-----------------------------------------------//
+
+	.skills {
+		grid-template-columns: 1fr;
+		gap: 20px;
+		ul {
+			list-style-position: inside;
+		}
+	}
+
+	// PORTFOLIO 768PX-----------------------------------------------//
+	.portfolio {
+		grid-template-columns: 1fr;
+	}
 }
 
 // MEDIA QUERY 550PX-----------------------------------------------//

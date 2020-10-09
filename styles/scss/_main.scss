@@ -125,7 +125,7 @@ nav {
 // ABOUT SECTION-----------------------------------------------//
 
 .about {
-	padding: 70px 0;
+	// padding: 70px 0;
 	height: auto;
 }
 
@@ -148,13 +148,16 @@ nav {
 
 .skillsBg {
 	background-color: $lightGrey;
-	padding: 70px 0;
+	// padding: 70px 0;
 }
 
 .skills {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 20px;
+	grid-template-columns: 2fr 1fr;
+	gap: 50px;
+	ul {
+		list-style-type: square;
+	}
 	// ul {
 	// 	display: grid;
 	// 	grid-template-columns: repeat(5, 1fr);
@@ -165,4 +168,12 @@ nav {
 	// 		padding-bottom: 15px;
 	// 	}
 	// }
+}
+
+// PORTFOLIO SECTION-----------------------------------------------//
+
+.portfolio {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 25px;
 }

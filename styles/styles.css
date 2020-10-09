@@ -452,6 +452,10 @@ a:hover {
   border-radius: 3px;
 }
 
+section {
+  padding: 70px 0;
+}
+
 header {
   background-color: #8ecae6;
   height: 100vh;
@@ -608,7 +612,6 @@ nav ul li {
 }
 
 .about {
-  padding: 70px 0;
   height: auto;
 }
 
@@ -632,15 +635,26 @@ nav ul li {
 
 .skillsBg {
   background-color: #e3e1e1;
-  padding: 70px 0;
 }
 
 .skills {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  gap: 50px;
+}
+
+.skills ul {
+  list-style-type: square;
+}
+
+.portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
 }
 
 @media (max-width: 768px) {
@@ -696,5 +710,17 @@ nav ul li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .skills {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .skills ul {
+    list-style-position: inside;
+  }
+  .portfolio {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
