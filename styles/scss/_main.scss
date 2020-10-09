@@ -57,6 +57,7 @@ ul {
 .sticky {
 	position: fixed;
 	top: 0;
+	z-index: 10;
 	width: 100%;
 	background-color: $white;
 	box-shadow: 0px 0px 2px $darkBlue;
@@ -128,4 +129,11 @@ ul {
 }
 
 .aboutImageContainer {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 20px;
+}
+
+.summary {
+	padding: 20px;
 }

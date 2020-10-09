@@ -397,6 +397,7 @@ span {
 h4,
 p {
   font-family: "Rambla", sans-serif;
+  font-weight: 400;
 }
 
 h1 {
@@ -411,12 +412,22 @@ h2 {
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  color: #8ecae6;
+  font-weight: 400;
+  padding-bottom: 20px;
 }
 
 p {
   font-size: 1.8rem;
-  line-height: 0.85;
+  line-height: 1.5;
+}
+
+.intro {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 10px;
 }
 
 a {
@@ -496,6 +507,7 @@ ul li {
 .sticky {
   position: fixed;
   top: 0;
+  z-index: 10;
   width: 100%;
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 2px #023047;
@@ -587,6 +599,18 @@ ul li {
 .about {
   padding: 70px 0;
   height: 100vh;
+}
+
+.aboutImageContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.summary {
+  padding: 20px;
 }
 
 @media (max-width: 768px) {
