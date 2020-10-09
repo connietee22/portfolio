@@ -3,7 +3,7 @@
 header {
 	background-color: $lightBlue;
 	height: 100vh;
-	min-height: 500px;
+	min-height: 600px;
 	span {
 		font-size: 3rem;
 		font-weight: 500;
@@ -35,10 +35,12 @@ header {
 	border: 0;
 }
 
-ul {
-	display: flex;
-	li {
-		padding: 10px 15px;
+nav {
+	ul {
+		display: flex;
+		li {
+			padding: 10px 15px;
+		}
 	}
 }
 
@@ -73,8 +75,7 @@ ul {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 90vh;
-	min-height: 400px;
+	height: 100%;
 }
 
 .imageContainer {
@@ -125,15 +126,43 @@ ul {
 
 .about {
 	padding: 70px 0;
-	height: 100vh;
+	height: auto;
 }
 
 .aboutImageContainer {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	gap: 20px;
+	transition: ease-all 0.5s;
+}
+
+.illustration {
+	padding-right: 20px;
 }
 
 .summary {
-	padding: 20px;
+	padding-top: 10px;
+}
+
+// SKILLS SECTION-----------------------------------------------//
+
+.skillsBg {
+	background-color: $lightGrey;
+	padding: 70px 0;
+}
+
+.skills {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	// ul {
+	// 	display: grid;
+	// 	grid-template-columns: repeat(5, 1fr);
+	// 	gap: 15px;
+	// 	width: 100%;
+	// 	flex-wrap: wrap;
+	// 	li {
+	// 		padding-bottom: 15px;
+	// 	}
+	// }
 }

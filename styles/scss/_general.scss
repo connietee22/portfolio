@@ -53,14 +53,16 @@ h1,
 h2,
 h3,
 nav,
-span {
+span,
+.button {
 	font-family: $headingfont;
 	text-transform: uppercase;
 	font-weight: 500;
 }
 
 h4,
-p {
+p,
+ul {
 	font-family: $bodyfont;
 	font-weight: 400;
 }
@@ -68,12 +70,12 @@ p {
 h1 {
 	font-size: 5rem;
 	font-weight: 500;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
 }
 
 h2 {
 	font-size: 3rem;
-	padding-bottom: 8px;
+	padding-bottom: 20px;
 }
 
 h3 {
@@ -84,8 +86,9 @@ h3 {
 	padding-bottom: 20px;
 }
 
+ul,
 p {
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	line-height: 1.5;
 }
 
@@ -102,4 +105,13 @@ a {
 
 a:hover {
 	filter: brightness(75%);
+}
+
+.button {
+	width: 50px;
+	background-color: $black;
+	color: $white;
+	text-transform: uppercase;
+	padding: 5px 15px;
+	border-radius: 3px;
 }
