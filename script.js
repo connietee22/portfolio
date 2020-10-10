@@ -11,14 +11,17 @@ $(function () {
 		$('.menu').removeClass('show');
 	});
 
-	const navOffset = $('.navBg').offset().top;
-	let windowScroll = $(document).scrollTop();
-
-	if (windowScroll >= navOffset) {
-		$('.navBg').addClass('sticky');
-	} else {
-		$('.navBg').removeClass('sticky');
-	}
-	// console.log(navOffset);
-	// console.log(windowScroll);
+	// window.onscroll = function toggleSticky() {
+	$(window).scroll(function () {
+		// const navOffset = $('.navBg').offset().top;
+		// let windowScroll = $(document).scrollTop();
+		if ($(this).scrollTop() > 1) {
+			// if (windowScroll > 0) {
+			$('.navBg').addClass('sticky');
+		} else {
+			$('.navBg').removeClass('sticky');
+		}
+		console.log(navOffset);
+		console.log(windowScroll);
+	});
 });

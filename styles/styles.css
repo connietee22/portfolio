@@ -524,18 +524,18 @@ nav ul li {
   background: transparent;
 }
 
-.show.menu {
-  display: block;
-}
-
 .sticky {
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 999;
   width: 100%;
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 2px #023047;
           box-shadow: 0px 0px 2px #023047;
+}
+
+.sticky + .headerTextContainer {
+  margin-top: 60px;
 }
 
 .menu {
@@ -616,6 +616,7 @@ nav ul li {
 .scrollChevron {
   text-align: center;
   font-size: 4rem;
+  --animate-duration: 3s;
 }
 
 .about {
