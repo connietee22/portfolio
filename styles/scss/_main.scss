@@ -91,7 +91,7 @@ nav {
 .typewriterText {
 	display: inline;
 	text-transform: lowercase;
-	padding-bottom: 60px;
+	padding-bottom: 100px;
 }
 
 /* The typing effect */
@@ -119,7 +119,8 @@ nav {
 .scrollChevron {
 	text-align: center;
 	font-size: 4rem;
-	padding-bottom: 30px;
+	// padding-bottom: 30px;
+	// justify-self: center;
 }
 
 // ABOUT SECTION-----------------------------------------------//
@@ -230,9 +231,12 @@ nav {
 }
 
 .portfolioDetailsText {
-	padding: 30px;
-	display: block;
-	position: relative;
+	padding-top: 20px;
+	h3 {
+		padding-bottom: 10px;
+	}
+	// display: block;
+	// position: relative;
 	// display: flex;
 	// flex-direction: column;
 	// justify-content: center;

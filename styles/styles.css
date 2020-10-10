@@ -572,7 +572,7 @@ nav ul li {
 .typewriterText {
   display: inline;
   text-transform: lowercase;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
 }
 
 /* The typing effect */
@@ -613,7 +613,6 @@ nav ul li {
 .scrollChevron {
   text-align: center;
   font-size: 4rem;
-  padding-bottom: 30px;
 }
 
 .about {
@@ -692,9 +691,11 @@ nav ul li {
 }
 
 .portfolioDetailsText {
-  padding: 30px;
-  display: block;
-  position: relative;
+  padding-top: 20px;
+}
+
+.portfolioDetailsText h3 {
+  padding-bottom: 10px;
 }
 
 footer {
