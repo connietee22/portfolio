@@ -460,7 +460,7 @@ section {
 }
 
 section:nth-child(2n) {
-  background-color: #edecec;
+  background-color: #f0efef;
 }
 
 header {
@@ -655,7 +655,7 @@ nav ul li {
 }
 
 .skillsBg {
-  background-color: #edecec;
+  background-color: #f0efef;
 }
 
 .skills {
@@ -686,8 +686,8 @@ nav ul li {
   gap: 50px;
 }
 
-.skillIcons li {
-  width: auto;
+.skillIcons i {
+  text-shadow: 0px 1px 1px #fb8500;
 }
 
 .portfolio {
@@ -699,8 +699,8 @@ nav ul li {
 }
 
 .portfolio img {
-  -webkit-box-shadow: 0px 0px 2px #8ecae6;
-          box-shadow: 0px 0px 2px #8ecae6;
+  border: 2px solid #8ecae6;
+  border-radius: 3px;
 }
 
 .portfolioDetailsText {
@@ -709,6 +709,11 @@ nav ul li {
 
 .portfolioDetailsText h3 {
   padding-bottom: 10px;
+}
+
+.portfolioDetailsText .bar {
+  font-family: 'Rambla', sans-serif;
+  color: #fb8500;
 }
 
 footer {
@@ -726,7 +731,7 @@ footer {
     left: 50vw;
     right: 0;
     bottom: 0;
-    background: #edecec;
+    background: #f0efef;
     color: #023047;
     z-index: 10;
     display: -webkit-box;

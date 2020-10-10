@@ -188,16 +188,11 @@ nav {
 	font-size: clamp(4rem, 5vw, 5rem);
 	color: $black;
 	gap: 50px;
-	// justify-items: stretch;
-	li {
-		width: auto;
-		// text-align: center;
+	i {
+		text-shadow: 0px 1px 1px $orange;
 	}
-	// i {
-	// 	padding-right: 15px;
-	// }
-	// i:last-child {
-	// 	padding-right: 0px;
+	// li {
+	// 	// width: auto;
 	// }
 }
 
@@ -208,40 +203,10 @@ nav {
 	grid-template-columns: repeat(3, 1fr);
 	gap: 25px;
 	img {
-		// display: none;
-		box-shadow: 0px 0px 2px $lightBlue;
+		border: 2px solid $lightBlue;
+		border-radius: 3px;
+		// box-shadow: 0px 0px 2px $lightBlue;
 	}
-	// .portfolioItem {
-	// 	position: relative;
-	// 	display: inline-block;
-	// 	transition: fade 2s;
-	// }
-	// .portfolioDetails {
-	// 	position: absolute;
-	// 	top: 0;
-	// 	bottom: 0;
-	// 	left: 0;
-	// 	width: 100%;
-	// 	right: 0;
-	// 	background: rgba(0, 0, 0, 0.9);
-	// 	opacity: 0;
-	// 	transition: 0.3s;
-	// display: none;
-
-	// width: 400px;
-	// height: 400px;
-	// background-color: $darkBlue;
-	// color: $white;
-	// position: absolute;
-	// top: 0;
-	// left: 0;
-	// z-index: 99;
-	// text-align: center;
-	// }
-
-	// .portfolioItem:hover .portfolioDetails {
-	// 	display: inline;
-	// }
 }
 
 .portfolioDetailsText {
@@ -249,11 +214,10 @@ nav {
 	h3 {
 		padding-bottom: 10px;
 	}
-	// display: block;
-	// position: relative;
-	// display: flex;
-	// flex-direction: column;
-	// justify-content: center;
+	.bar {
+		font-family: 'Rambla', sans-serif;
+		color: $orange;
+	}
 }
 
 // CONTACT SECTION-----------------------------------------------//
