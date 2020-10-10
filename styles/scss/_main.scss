@@ -159,24 +159,31 @@ nav {
 	gap: 50px;
 	.otherSkills {
 		list-style-type: square;
-		// order: 3;
 	}
 }
 
 .tools {
 	grid-column: 1/4;
-	// order: 2;
 }
 
 .skillIcons {
-	display: flex;
-	justify-content: space-between;
-	// grid-column: 1/4;
-	font-size: 5rem;
+	display: grid;
+	// grid-template-columns: repeat(8, 1fr);
+	grid-template-columns: repeat(8, 1fr);
+	font-size: clamp(4rem, 5vw, 5rem);
 	color: $black;
-	i {
-		padding-right: 15px;
+	gap: 50px;
+	// justify-items: stretch;
+	li {
+		width: auto;
+		// text-align: center;
 	}
+	// i {
+	// 	padding-right: 15px;
+	// }
+	// i:last-child {
+	// 	padding-right: 0px;
+	// }
 }
 
 // PORTFOLIO SECTION-----------------------------------------------//
@@ -189,37 +196,37 @@ nav {
 		// display: none;
 		box-shadow: 0px 0px 2px $lightBlue;
 	}
-	.portfolioItem {
-		position: relative;
-		display: inline-block;
-		transition: fade 2s;
-	}
-	.portfolioDetails {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		right: 0;
-		background: rgba(0, 0, 0, 0.9);
-		opacity: 0;
-		transition: 0.3s;
-		// display: none;
+	// .portfolioItem {
+	// 	position: relative;
+	// 	display: inline-block;
+	// 	transition: fade 2s;
+	// }
+	// .portfolioDetails {
+	// 	position: absolute;
+	// 	top: 0;
+	// 	bottom: 0;
+	// 	left: 0;
+	// 	width: 100%;
+	// 	right: 0;
+	// 	background: rgba(0, 0, 0, 0.9);
+	// 	opacity: 0;
+	// 	transition: 0.3s;
+	// display: none;
 
-		// width: 400px;
-		// height: 400px;
-		// background-color: $darkBlue;
-		// color: $white;
-		// position: absolute;
-		// top: 0;
-		// left: 0;
-		// z-index: 99;
-		// text-align: center;
-	}
+	// width: 400px;
+	// height: 400px;
+	// background-color: $darkBlue;
+	// color: $white;
+	// position: absolute;
+	// top: 0;
+	// left: 0;
+	// z-index: 99;
+	// text-align: center;
+	// }
 
-	.portfolioItem:hover .portfolioDetails {
-		display: inline;
-	}
+	// .portfolioItem:hover .portfolioDetails {
+	// 	display: inline;
+	// }
 }
 
 .portfolioDetailsText {

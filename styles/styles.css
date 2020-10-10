@@ -416,7 +416,7 @@ h2 {
 h3 {
   font-size: 2rem;
   letter-spacing: 3px;
-  color: #8ecae6;
+  color: #219ebc;
   font-weight: 400;
   padding-bottom: 20px;
   text-shadow: 0px 1px 1px #023047;
@@ -665,18 +665,17 @@ nav ul li {
 }
 
 .skillIcons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-size: 5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  font-size: clamp(4rem, 5vw, 5rem);
   color: #1c1c1c;
+  gap: 50px;
 }
 
-.skillIcons i {
-  padding-right: 15px;
+.skillIcons li {
+  width: auto;
 }
 
 .portfolio {
@@ -690,30 +689,6 @@ nav ul li {
 .portfolio img {
   -webkit-box-shadow: 0px 0px 2px #8ecae6;
           box-shadow: 0px 0px 2px #8ecae6;
-}
-
-.portfolio .portfolioItem {
-  position: relative;
-  display: inline-block;
-  -webkit-transition: fade 2s;
-  transition: fade 2s;
-}
-
-.portfolio .portfolioDetails {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  right: 0;
-  background: rgba(0, 0, 0, 0.9);
-  opacity: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.portfolio .portfolioItem:hover .portfolioDetails {
-  display: inline;
 }
 
 .portfolioDetailsText {
@@ -799,6 +774,10 @@ footer {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+  .skills .skillIcons {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
   .portfolio {
     -ms-grid-columns: 1fr;

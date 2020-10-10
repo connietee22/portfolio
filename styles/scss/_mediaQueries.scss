@@ -58,6 +58,9 @@
 		.tools {
 			order: 2;
 		}
+		.skillIcons {
+			grid-template-columns: repeat(4, 1fr);
+		}
 	}
 
 	// PORTFOLIO 768PX-----------------------------------------------//
