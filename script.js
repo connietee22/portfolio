@@ -1,4 +1,6 @@
 $(function () {
+	AOS.init();
+
 	$('.hamburger').click(function () {
 		// toggle class show on the menu
 		$('.menu').addClass('show');
@@ -19,6 +21,4 @@ $(function () {
 	}
 	// console.log(navOffset);
 	// console.log(windowScroll);
-
-	$('.portfolio').on('hover', function () {});
 });
