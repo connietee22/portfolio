@@ -419,6 +419,7 @@ h3 {
   color: #8ecae6;
   font-weight: 400;
   padding-bottom: 20px;
+  text-shadow: 0px 1px 1px #023047;
 }
 
 ul,
@@ -453,7 +454,11 @@ a:hover {
 }
 
 section {
-  padding: 70px 0;
+  padding: 100px 0;
+}
+
+section:nth-child(2n) {
+  background-color: #edecec;
 }
 
 header {
@@ -633,8 +638,12 @@ nav ul li {
   padding-top: 10px;
 }
 
+.summary div {
+  margin-bottom: 15px;
+}
+
 .skillsBg {
-  background-color: #e3e1e1;
+  background-color: #edecec;
 }
 
 .skills {
@@ -645,8 +654,29 @@ nav ul li {
   gap: 50px;
 }
 
-.skills ul {
+.skills .otherSkills {
   list-style-type: square;
+}
+
+.tools {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+.skillIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 5rem;
+  color: #1c1c1c;
+}
+
+.skillIcons i {
+  padding-right: 15px;
 }
 
 .portfolio {
@@ -655,6 +685,46 @@ nav ul li {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   gap: 25px;
+}
+
+.portfolio img {
+  -webkit-box-shadow: 0px 0px 2px #8ecae6;
+          box-shadow: 0px 0px 2px #8ecae6;
+}
+
+.portfolio .portfolioItem {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: fade 2s;
+  transition: fade 2s;
+}
+
+.portfolio .portfolioDetails {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.portfolio .portfolioItem:hover .portfolioDetails {
+  display: inline;
+}
+
+.portfolioDetailsText {
+  padding: 30px;
+  display: block;
+  position: relative;
+}
+
+footer {
+  background-color: #023047;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -667,7 +737,7 @@ nav ul li {
     left: 50vw;
     right: 0;
     bottom: 0;
-    background: #e3e1e1;
+    background: #edecec;
     color: #023047;
     z-index: 10;
     display: -webkit-box;
@@ -718,6 +788,17 @@ nav ul li {
   }
   .skills ul {
     list-style-position: inside;
+  }
+  .skills .otherSkills {
+    list-style-type: square;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .skills .tools {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .portfolio {
     -ms-grid-columns: 1fr;

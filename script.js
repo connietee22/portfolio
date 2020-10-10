@@ -17,6 +17,8 @@ $(function () {
 	} else {
 		$('.navBg').removeClass('sticky');
 	}
-	console.log(navOffset);
-	console.log(windowScroll);
+	// console.log(navOffset);
+	// console.log(windowScroll);
+
+	$('.portfolio').on('hover', function () {});
 });

@@ -142,32 +142,41 @@ nav {
 
 .summary {
 	padding-top: 10px;
+	div {
+		margin-bottom: 15px;
+	}
 }
 
 // SKILLS SECTION-----------------------------------------------//
 
 .skillsBg {
 	background-color: $lightGrey;
-	// padding: 70px 0;
 }
 
 .skills {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	gap: 50px;
-	ul {
+	.otherSkills {
 		list-style-type: square;
+		// order: 3;
 	}
-	// ul {
-	// 	display: grid;
-	// 	grid-template-columns: repeat(5, 1fr);
-	// 	gap: 15px;
-	// 	width: 100%;
-	// 	flex-wrap: wrap;
-	// 	li {
-	// 		padding-bottom: 15px;
-	// 	}
-	// }
+}
+
+.tools {
+	grid-column: 1/4;
+	// order: 2;
+}
+
+.skillIcons {
+	display: flex;
+	justify-content: space-between;
+	// grid-column: 1/4;
+	font-size: 5rem;
+	color: $black;
+	i {
+		padding-right: 15px;
+	}
 }
 
 // PORTFOLIO SECTION-----------------------------------------------//
@@ -176,4 +185,57 @@ nav {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 25px;
+	img {
+		// display: none;
+		box-shadow: 0px 0px 2px $lightBlue;
+	}
+	.portfolioItem {
+		position: relative;
+		display: inline-block;
+		transition: fade 2s;
+	}
+	.portfolioDetails {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		right: 0;
+		background: rgba(0, 0, 0, 0.9);
+		opacity: 0;
+		transition: 0.3s;
+		// display: none;
+
+		// width: 400px;
+		// height: 400px;
+		// background-color: $darkBlue;
+		// color: $white;
+		// position: absolute;
+		// top: 0;
+		// left: 0;
+		// z-index: 99;
+		// text-align: center;
+	}
+
+	.portfolioItem:hover .portfolioDetails {
+		display: inline;
+	}
+}
+
+.portfolioDetailsText {
+	padding: 30px;
+	display: block;
+	position: relative;
+	// display: flex;
+	// flex-direction: column;
+	// justify-content: center;
+}
+
+// CONTACT SECTION-----------------------------------------------//
+
+// FOOTER SECTION-----------------------------------------------//
+
+footer {
+	background-color: $darkBlue;
+	color: $white;
 }
