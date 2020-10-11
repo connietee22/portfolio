@@ -21,7 +21,5 @@ $(function () {
 		} else {
 			$('.navBg').removeClass('sticky');
 		}
-		console.log(navOffset);
-		console.log(windowScroll);
 	});
 });

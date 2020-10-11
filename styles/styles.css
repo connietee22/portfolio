@@ -716,6 +716,32 @@ nav ul li {
   color: #fb8500;
 }
 
+.contactText p:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.helloContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.helloContainer p {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  margin-bottom: 0;
+}
+
+.helloContainer img {
+  width: 100px;
+  position: relative;
+  top: -5px;
+  left: -25px;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
 footer {
   background-color: #023047;
   color: #fff;

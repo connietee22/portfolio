@@ -191,9 +191,6 @@ nav {
 	i {
 		text-shadow: 0px 1px 1px $orange;
 	}
-	// li {
-	// 	// width: auto;
-	// }
 }
 
 // PORTFOLIO SECTION-----------------------------------------------//
@@ -221,6 +218,29 @@ nav {
 }
 
 // CONTACT SECTION-----------------------------------------------//
+
+.contactText {
+	p:nth-child(2) {
+		margin-bottom: 20px;
+	}
+}
+
+.helloContainer {
+	display: flex;
+
+	p {
+		align-self: end;
+		margin-bottom: 0;
+		// position: relative;
+	}
+	img {
+		width: 100px;
+		position: relative;
+		top: -5px;
+		left: -25px;
+		transform: rotate(15deg);
+	}
+}
 
 // FOOTER SECTION-----------------------------------------------//
 
