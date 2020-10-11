@@ -92,8 +92,8 @@
 					<div class="summary">
 						<div>
                             <h3>WHO AM I?</h3>
-                            <div><p><span class="intro">Hi, I'm Connie Tsang!</span></p></div>
-                            <p>I'm a front-end web developer who gets a kick out of problem-solving, organization, well-commented code, and user experience. As a photographer and editor, I'm accustomed to juggling deadlines, poring over visual details, collaborating with designers and always keeping the good ol' audience in mind. As a business owner, I've come out with some strong management, organizational, and communication chops.... strike a great balance between independent self-starter and supportive teammate... my long-term client relationships (U of Toronto, Toronto International Film Festival) speaks to that! My volunteer work involving diverse seniors with disabilities fuels my interest in general accessibility matters, including the exciting world of web! I also get pretty darn excited about meeting pets.</p>
+                            <div><p><span class="highlight">Hi there. I'm Connie!</span></p></div>
+                            <p>I'm a front-end web developer who gets a kick out of problem-solving, organization, well-commented code, and understanding user experience. Coming from the photography and editing worlds, I'm familiar with juggling deadlines, poring over visual details, and collaborating with designers, while always keeping the good ol' audience in mind. As a business owner, I've refined my organizational, communication and time-management chops.... strike a great balance between independent self-starter and supportive teammate... When I'm not coding, you'll find me hopping on my bike, eating dumplings, chatting with seniors, and/or getting super excited about pets.</p>
 						</div>
                         <div><a href="#contact" class="button">Hire me</a></div>
 					</div>
@@ -120,7 +120,10 @@
                             <li>Detail- and deadline-oriented</li>
                         </ul>
                         <div class="tools">
-                            <h3>Tools/Languages</h3>
+                            <div>
+                                <p><span class="highlight">In my toolkit:</span></p>
+                            </div>
+                            <!-- <h3>Tools/Languages</h3> -->
                             <ul class="skillIcons" data-aos="slide-up" data-aos-duration="1500">
                                 <li><i class="devicon-html5-plain-wordmark" aria-label="skilled in HTML5"></i></li>
                                 <li><i class="devicon-css3-plain-wordmark" aria-label="skilled in CSS2"></i></li>
@@ -138,26 +141,56 @@
 
             <section id="portfolio" class="wrapper">
                 <h2>Portfolio</h2>
-                <div class="portfolio ">
-                   <a href="https://connietee22.github.io/gimmeDumplings">
-                       <div class="portfolioItem portfolioDetails">
-                           <img src="./assets/gimmeDumplings.png" alt="jQuery portfolio piece - Gimme Dumplings by Connie Tsang">
-                            <div class="portfolioDetails">
-                                <div class="portfolioDetailsText">
-                                    <h3>Gimme Dumplings</h3>
-                                    <p>jQuery <span class="bar">|</span> HTML5 <span class="bar">|</span> SCSS</p>
+                <div class="portfolio">
+                    <a href="https://connietee22.github.io/gimmeDumplings">
+                        <div class="portfolioItemContainer">
+                            <div class="portfolioItem">
+                                <img src="./assets/gimmeDumplings.png" alt="jQuery portfolio piece - Gimme Dumplings by Connie Tsang">
+                                <div class="overlay">
+                                    <div class="portfolioInformation">
+                                        <h4>Gimme Dumplings</h4>
+                                        <p>Enter your preferences + find a new recipe!</p>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="portfolioDetailsText">
+                                <h3>Gimme Dumplings</h3>
+                                <p>jQuery <span class="bar">|</span> HTML5 <span class="bar">|</span> SCSS</p>
+                            </div>
                         </div>
-                   </a>
+                    </a>
                     <a href="https://connietee22.github.io/dialAPeewee">
-                        <div class="portfolioItem portfolioDetails">
-                            <img src="./assets/dialAPeeWeeConnieTsang.png" alt="jQuery portfolio piece - Dial-A-PeeWee by Connie Tsang">
-                            <div class="portfolioDetails">
-                                <div class="portfolioDetailsText">
-                                    <h3>Dial-A-PeeWee</h3>
-                                    <p>jQuery <span class="bar">|</span> HTML5 <span class="bar">|</span> CSS3</p>
+                        <div class="portfolioItemContainer">
+                            <div class="portfolioItem">
+                                <img src="./assets/dialAPeeWeeConnieTsang.png" alt="jQuery portfolio piece - Dial-A-PeeWee by Connie Tsang">
+                                <div class="overlay">
+                                    <div class="portfolioInformation">
+                                        <h4>Dial-A-Pee-Wee</h4>
+                                        <p>Mouse-and-keyboard-activated soundboard.</p>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="portfolioDetailsText">
+                                <h3>Dial-A-Pee-Wee</h3>
+                                <p>jQuery <span class="bar">|</span> HTML5 <span class="bar">|</span> SCSS</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://connietee22.github.io/junoGradDirectory">
+                        <div class="portfolioItemContainer">
+                            <div class="portfolioItem">
+                                <img src="./assets/junoGradDirectory.png" alt="React portfolio piece - Juno Grad Directory by Connie Tsang">
+                                <div class="overlay">
+                                    <div class="portfolioInformation">
+                                        <h4>Juno Grad Directory</h4>
+                                        <p>Input + display contact details.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolioDetailsText">
+                                <h3>Grad Directory</h3>
+                                <p>React <span class="bar">|</span> Firebase <span class="bar">|</span> HTML5 <span class="bar">|</span> CSS3</p>
+                                </p>
                             </div>
                         </div>
                     </a>
@@ -178,34 +211,34 @@
 
             <section id="contact" class="contactBg">
                 <div class="wrapper contact">
-                    <div class="contactText">
+                    <!-- <div class="contactText"> -->
                         <h2>Contact</h2>
                         <p>Hey... Wanna work together? Let's chat!</p>
-                        <div class="helloContainer">
-                            <p><span class="intro">Connie Tsang</span></p>
-                            <img src="assets/hello.png" alt="speech bubble with hello inside">
-                        </div>
-                        <p><span>Phone: </span>416-826-2910</p>
-                        <p><span>Email: </span><a href="mailto:connietsangcodes@gmail.com">connietsangcodes@gmail.com</a></p>
-                    </div>
-                    <ul class="socials">
-                        <li>
-                            <a href="https://www.linkedin.com/in/connietsang/"><i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://github.com/connietee22"><i class="fab fa-github"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/connieteedot"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="http://instagram.com/conniemtsang"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <a href="mailto:connietsangcodes@gmail.com"><i class="far fa-envelope"></i></a>
-                        </li>
-                    </ul>
+                            <div class="textSocialsContainer">
+                                <div class="textContainer">
+                                    <div class="helloContainer">
+                                        <p><span class="highlight">Connie Tsang</span></p>
+                                        <img src="assets/hello2.png" alt="speech bubble with hello inside" data-aos="flip-up" data-aos-duration="1500">
+                                    </div>
+                                    <p><span>Write me: </span><a href="mailto:connietsangcodes@gmail.com">connietsangcodes@gmail.com</a></p>
+                                    <p><span>Call me: </span>416-826-2910</p>
+                                </div>
+                                <ul class="socials">
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/connietsang/"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="https://github.com/connietee22"><i class="fab fa-github"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/connieteedot"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                               
+                                
+                                </ul>
+                            </div>
+                    <!-- </div> -->
                 </div>
             </section>
         </main>

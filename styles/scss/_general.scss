@@ -52,6 +52,7 @@ img {
 h1,
 h2,
 h3,
+h4,
 nav,
 span,
 .button {
@@ -60,7 +61,6 @@ span,
 	font-weight: 500;
 }
 
-h4,
 p,
 ul {
 	font-family: $bodyfont;
@@ -79,7 +79,7 @@ h2 {
 }
 
 h3 {
-	font-size: 2rem;
+	font-size: 2.7rem;
 	letter-spacing: 3px;
 	color: $midBlue;
 	font-weight: 400;
@@ -87,17 +87,15 @@ h3 {
 	text-shadow: 0px 1px 1px $orange;
 }
 
-ul,
-p {
-	font-size: 1.6rem;
-	line-height: 1.5;
+h4 {
+	font-size: 2.5;
+	margin-bottom: 15px;
 }
 
-.intro {
-	font-size: 2rem;
-	font-weight: 700;
-	padding-bottom: 10px;
-	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, $orange 50%);
+ul,
+p {
+	font-size: 1.7rem;
+	line-height: 1.5;
 }
 
 a {
