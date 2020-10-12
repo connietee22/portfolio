@@ -414,7 +414,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.7rem;
+  font-size: 2.6rem;
   letter-spacing: 3px;
   color: #219ebc;
   font-weight: 400;
@@ -423,7 +423,7 @@ h3 {
 }
 
 h4 {
-  font-size: 2.5;
+  font-size: 2.4rem;
   margin-bottom: 15px;
 }
 
@@ -643,7 +643,6 @@ nav ul li {
 }
 
 .highlight {
-  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 30px;
   padding-bottom: 0;
@@ -681,6 +680,7 @@ nav ul li {
   font-size: clamp(4rem, 5vw, 5rem);
   color: #1c1c1c;
   gap: 50px;
+  margin-top: 15px;
 }
 
 .skillIcons i {
@@ -740,6 +740,7 @@ nav ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 0.9;
 }
 
 .portfolioItem:hover .overlay {
@@ -754,10 +755,6 @@ nav ul li {
   padding: 20px;
   text-align: center;
   margin: 0 auto;
-}
-
-.portfolioInformation h4 {
-  font-size: 2.5rem;
 }
 
 .portfolioInformation div {
@@ -788,16 +785,13 @@ nav ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .contactText p:nth-child(2) {
   margin-bottom: 20px;
-}
-
-.socials {
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
 }
 
 .helloContainer {
@@ -807,10 +801,7 @@ nav ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.helloContainer p {
-  margin-bottom: 0;
+  margin-top: 20px;
 }
 
 .helloContainer img {
@@ -823,8 +814,35 @@ nav ul li {
 }
 
 footer {
-  background-color: #023047;
+  background-color: #219ebc;
   color: #fff;
+  padding: 20px 0;
+}
+
+footer h2 {
+  padding: 0;
+}
+
+.footerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.socials {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 768px) {
@@ -907,5 +925,20 @@ footer {
   .portfolio {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .textSocialsContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }

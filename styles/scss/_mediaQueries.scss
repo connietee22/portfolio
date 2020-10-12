@@ -71,4 +71,9 @@
 
 // MEDIA QUERY 550PX-----------------------------------------------//
 @media (max-width: 550px) {
+	.textSocialsContainer {
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
 }
