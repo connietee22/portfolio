@@ -252,6 +252,10 @@ $(function () {
 		$('.menu').removeClass('show');
 	});
 
+	$('.menuScreen li').click(function () {
+		$('.menu').removeClass('show');
+	});
+
 	// ON WINDOW SCROLL---------------------------------------------------------------//
 	$(window).scroll(function () {
 		// const navOffset = $('.navBg').offset().top;

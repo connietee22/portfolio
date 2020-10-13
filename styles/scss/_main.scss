@@ -262,8 +262,10 @@ nav {
 
 .portfolio {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 25px;
+	grid-template-columns: 1fr 1fr 1fr;
+	// grid-template-rows: auto;
+	column-gap: 25px;
+	row-gap: 15px;
 	img {
 		border: 2px solid $lightBlue;
 		// box-shadow: 0px 0px 2px $lightBlue;
@@ -280,6 +282,7 @@ nav {
 
 .portfolioItem {
 	position: relative;
+	height: 100%;
 }
 
 .overlay {
@@ -295,7 +298,7 @@ nav {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	opacity: 0.9;
+	opacity: 0.95;
 }
 
 .portfolioItem:hover .overlay {
@@ -320,12 +323,18 @@ nav {
 
 .portfolioDetailsText {
 	padding-top: 20px;
+	div {
+		margin-bottom: 15px;
+	}
 	h3 {
 		padding-bottom: 10px;
 	}
 	.bar {
 		font-family: 'Rambla', sans-serif;
 		color: $orange;
+	}
+	a {
+		margin-top: 30px;
 	}
 }
 

@@ -712,9 +712,11 @@ nav ul li {
 .portfolio {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+  row-gap: 15px;
 }
 
 .portfolio img {
@@ -738,6 +740,7 @@ nav ul li {
 
 .portfolioItem {
   position: relative;
+  height: 100%;
 }
 
 .overlay {
@@ -761,7 +764,7 @@ nav ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .portfolioItem:hover .overlay {
@@ -790,6 +793,10 @@ nav ul li {
   padding-top: 20px;
 }
 
+.portfolioDetailsText div {
+  margin-bottom: 15px;
+}
+
 .portfolioDetailsText h3 {
   padding-bottom: 10px;
 }
@@ -797,6 +804,10 @@ nav ul li {
 .portfolioDetailsText .bar {
   font-family: 'Rambla', sans-serif;
   color: #fb8500;
+}
+
+.portfolioDetailsText a {
+  margin-top: 30px;
 }
 
 .textSocialsContainer {
@@ -903,14 +914,14 @@ footer h2 {
   .menu {
     display: none;
   }
-  .menu .fullScreen {
+  .menu .menuScreen {
     position: fixed;
     top: 0;
     left: 50vw;
     right: 0;
     bottom: 0;
-    background: #f0efef;
-    color: #023047;
+    background: #023047;
+    color: #fff;
     z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -925,7 +936,14 @@ footer h2 {
     display: block;
     text-align: right;
   }
-  .fullScreen ul {
+  .hamburgerExit {
+    color: #fff;
+  }
+  .menuScreen {
+    height: auto;
+    min-height: 300px;
+  }
+  .menuScreen ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -933,10 +951,9 @@ footer h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 20%;
   }
   .menu ul a {
-    font-size: 50px;
+    font-size: 20px;
     text-align: center;
     width: 100%;
     padding: 30px;
