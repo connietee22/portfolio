@@ -180,9 +180,10 @@ $(function () {
 
 	// TYPEWRITER EFFECT----------------------------------------------------------------//
 
-	// const txtRotate = function (el, toRotate, period) {
+	// TYPEWRITER #2 //
+	// const txtType = function (element, toRotate, period) {
 	// 	this.toRotate = toRotate;
-	// 	this.el = el;
+	// 	this.el = element;
 	// 	this.loopNum = 0;
 	// 	this.period = parseInt(period, 10) || 2000;
 	// 	this.txt = '';
@@ -190,9 +191,9 @@ $(function () {
 	// 	this.isDeleting = false;
 	// };
 
-	// txtRotate.prototype.tick = function () {
-	// 	var i = this.loopNum % this.toRotate.length;
-	// 	var fullTxt = this.toRotate[i];
+	// txtType.prototype.tick = function () {
+	// 	const i = this.loopNum % this.toRotate.length;
+	// 	const fullTxt = this.toRotate[i];
 
 	// 	if (this.isDeleting) {
 	// 		this.txt = fullTxt.substring(0, this.txt.length - 1);
@@ -200,10 +201,10 @@ $(function () {
 	// 		this.txt = fullTxt.substring(0, this.txt.length + 1);
 	// 	}
 
-	// 	this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+	// 	this.element.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
 	// 	var that = this;
-	// 	var delta = 300 - Math.random() * 100;
+	// 	var delta = 200 - Math.random() * 100;
 
 	// 	if (this.isDeleting) {
 	// 		delta /= 2;
@@ -224,58 +225,20 @@ $(function () {
 	// };
 
 	// window.onload = function () {
-	// 	var elements = document.getElementsByClassName('txt-rotate');
+	// 	var elements = document.getElementsByClassName('typewrite');
 	// 	for (var i = 0; i < elements.length; i++) {
-	// 		var toRotate = elements[i].getAttribute('data-rotate');
+	// 		var toRotate = elements[i].getAttribute('data-type');
 	// 		var period = elements[i].getAttribute('data-period');
 	// 		if (toRotate) {
-	// 			new TxtRotate(elements[i], JSON.parse(toRotate), period);
+	// 			new TxtType(elements[i], JSON.parse(toRotate), period);
 	// 		}
 	// 	}
 	// 	// INJECT CSS
 	// 	var css = document.createElement('style');
 	// 	css.type = 'text/css';
-	// 	css.innerHTML = '.txt-rotate > .wrap { border-right: 0.08em solid #666 }';
+	// 	css.innerHTML = '.typewrite > .wrap { border-right: 0.08em solid #fff}';
 	// 	document.body.appendChild(css);
 	// };
-
-	// TYPEWRITER #2 //
-	/*****Start Typewriter effect*****/
-	// $('.typewriter').css('display', 'none');
-	// setTimeout(function () {
-	// 	$('.typewriter').css('display', 'flex');
-
-	// 	let string = $('.typewriter').html(),
-	// 		i = 0,
-	// 		isTag,
-	// 		text,
-	// 		cursor = '|',
-	// 		timer;
-
-	// 	(function type() {
-	// 		text = string.slice(0, ++i);
-	// 		if (text === string) {
-	// 			i = 0;
-	// 			blink();
-	// 			return;
-	// 		}
-	// 		$('.typewriter').html(text + ' ' + cursor);
-	// 		timer = setTimeout(type, 40);
-	// 	})();
-
-	// 	function blink() {
-	// 		i++;
-	// 		const foo = string + ' ' + (i % 2 ? cursor : '');
-	// 		$('.typewriter').html(foo);
-	// 		if (i < 10) timer = setTimeout(blink, 600);
-	// 		else fade();
-	// 	}
-
-	// 	function fade() {
-	// 		$('.typewriter').html(string);
-	// 	}
-	// }, 300);
-	/*****End Typewriter effect*****/
 
 	// TOGGLING HAMBURGER MENU----------------------------------------------------------//
 

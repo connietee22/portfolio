@@ -543,6 +543,10 @@ nav ul li {
   display: flex;
 }
 
+.show.menu {
+  display: block;
+}
+
 .headerTextContainer {
   display: -webkit-box;
   display: -ms-flexbox;
