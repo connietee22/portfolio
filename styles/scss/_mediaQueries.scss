@@ -1,5 +1,9 @@
 // MEDIA QUERY 768PX-----------------------------------------------//
 @media (max-width: 768px) {
+	section {
+		padding: 70px 0;
+	}
+
 	.menu {
 		display: none;
 	}
@@ -73,7 +77,12 @@
 @media (max-width: 550px) {
 	.textSocialsContainer {
 		flex-direction: column;
-		justify-content: center;
-		align-items: flex-start;
+	}
+
+	form {
+		width: 100%;
+		margin-top: 40px;
+		padding-top: 30px;
+		border-top: 3px solid $lightBlue;
 	}
 }

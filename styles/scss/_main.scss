@@ -106,15 +106,75 @@ nav {
 
 .isVisible {
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
-	border-right: 0.15em solid orange; /* The typwriter cursor */
+	border-right: 0.15em solid orange; /* The typewriter cursor */
 	white-space: nowrap; /* Keeps the content on a single line */
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-	animation: typing 2.5s steps(30, end), blink-caret 0.75s step-end infinite;
+	animation: typing 2.5s steps(30, end), blink-caret 0.75s infinite;
 }
 
 .isHidden {
 	display: none;
 }
+
+.typewriter {
+	display: inline;
+	text-transform: lowercase;
+	padding-bottom: 100px;
+}
+
+// /*** Animated Headline ***/
+// .cd-headline {
+// 	font-size: 20px;
+// 	font-weight: 700;
+// 	font-family: 'Rambla', sans-serif;
+// }
+// .cd-words-wrapper {
+// 	display: inline-block;
+// 	position: relative;
+// 	text-align: left;
+// }
+// .cd-words-wrapper b {
+// 	display: inline-block;
+// 	position: absolute;
+// 	white-space: nowrap;
+// 	left: 0;
+// 	top: 0;
+// }
+// .cd-words-wrapper b.isVisible {
+// 	position: relative;
+// }
+// .no-js .cd-words-wrapper b {
+// 	opacity: 0;
+// }
+// .no-js .cd-words-wrapper b.isVisible {
+// 	opacity: 1;
+// }
+// /* xclip */
+// .cd-headline.clip span {
+// 	display: inline-block;
+// 	padding: 0.2em 0;
+// }
+// .cd-headline.clip .cd-words-wrapper {
+// 	overflow: hidden;
+// 	vertical-align: top;
+// }
+// .cd-headline.clip .cd-words-wrapper::after {
+// 	/* line */
+// 	content: '';
+// 	position: absolute;
+// 	top: 25%;
+// 	right: 0;
+// 	width: 4px;
+// 	height: 50%;
+// 	background-color: #fff;
+// }
+// .cd-headline.clip b {
+// 	opacity: 0;
+// 	font-weight: 700;
+// }
+// .cd-headline b.isVisible {
+// 	opacity: 1;
+// }
 
 .scrollChevron {
 	text-align: center;
@@ -195,7 +255,6 @@ nav {
 	gap: 25px;
 	img {
 		border: 2px solid $lightBlue;
-		border-radius: 3px;
 		// box-shadow: 0px 0px 2px $lightBlue;
 	}
 	a:hover {
@@ -264,7 +323,8 @@ nav {
 .textSocialsContainer {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: flex-start;
+	margin-top: 20px;
 }
 
 .contactText {
@@ -276,13 +336,36 @@ nav {
 .helloContainer {
 	display: flex;
 	align-items: center;
-	margin-top: 20px;
+	// margin-top: 20px;
 	img {
 		width: 100px;
 		position: relative;
 		top: -5px;
 		left: -10px;
 		transform: rotate(5deg);
+	}
+}
+
+form {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	input,
+	textarea {
+		border: 1px solid $lightBlue;
+	}
+	label {
+		font-size: 1.9rem;
+		margin: 15px 0 5px;
+	}
+	.button {
+		margin-top: 15px;
+		width: 125px;
+		// padding: 3px 0px;
+		// background-color: $lightBlue;
+	}
+	textarea {
+		resize: none;
 	}
 }
 

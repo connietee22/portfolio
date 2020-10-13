@@ -390,6 +390,8 @@ h3,
 h4,
 nav,
 span,
+label,
+input,
 .button {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
@@ -438,17 +440,17 @@ a {
   color: inherit;
 }
 
-a:hover {
+a:hover,
+.button:hover {
   -webkit-filter: brightness(75%);
           filter: brightness(75%);
 }
 
 .button {
-  width: 50px;
   background-color: #1c1c1c;
   color: #fff;
   text-transform: uppercase;
-  padding: 5px 15px;
+  padding: 5px 20px;
   border-radius: 3px;
 }
 
@@ -597,17 +599,23 @@ nav ul li {
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid orange;
-  /* The typwriter cursor */
+  /* The typewriter cursor */
   white-space: nowrap;
   /* Keeps the content on a single line */
   margin: 0 auto;
   /* Gives that scrolling effect as the typing happens */
-  -webkit-animation: typing 2.5s steps(30, end), blink-caret 0.75s step-end infinite;
-          animation: typing 2.5s steps(30, end), blink-caret 0.75s step-end infinite;
+  -webkit-animation: typing 2.5s steps(30, end), blink-caret 0.75s infinite;
+          animation: typing 2.5s steps(30, end), blink-caret 0.75s infinite;
 }
 
 .isHidden {
   display: none;
+}
+
+.typewriter {
+  display: inline;
+  text-transform: lowercase;
+  padding-bottom: 100px;
 }
 
 .scrollChevron {
@@ -697,7 +705,6 @@ nav ul li {
 
 .portfolio img {
   border: 2px solid #8ecae6;
-  border-radius: 3px;
 }
 
 .portfolio a:hover {
@@ -785,9 +792,10 @@ nav ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 20px;
 }
 
 .contactText p:nth-child(2) {
@@ -801,7 +809,6 @@ nav ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20px;
 }
 
 .helloContainer img {
@@ -811,6 +818,36 @@ nav ul li {
   left: -10px;
   -webkit-transform: rotate(5deg);
           transform: rotate(5deg);
+}
+
+form {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form input,
+form textarea {
+  border: 1px solid #8ecae6;
+}
+
+form label {
+  font-size: 1.9rem;
+  margin: 15px 0 5px;
+}
+
+form .button {
+  margin-top: 15px;
+  width: 125px;
+}
+
+form textarea {
+  resize: none;
 }
 
 footer {
@@ -846,6 +883,9 @@ footer h2 {
 }
 
 @media (max-width: 768px) {
+  section {
+    padding: 70px 0;
+  }
   .menu {
     display: none;
   }
@@ -934,11 +974,11 @@ footer h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+  }
+  form {
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 3px solid #8ecae6;
   }
 }

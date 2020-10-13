@@ -55,6 +55,8 @@ h3,
 h4,
 nav,
 span,
+label,
+input,
 .button {
 	font-family: $headingfont;
 	text-transform: uppercase;
@@ -92,10 +94,6 @@ h4 {
 	margin-bottom: 15px;
 }
 
-// span {
-// 	font-size: 2rem;
-// }
-
 ul,
 p {
 	font-size: 1.7rem;
@@ -107,16 +105,17 @@ a {
 	color: inherit;
 }
 
-a:hover {
+a:hover,
+.button:hover {
 	filter: brightness(75%);
 }
 
 .button {
-	width: 50px;
+	// width: 150px;
 	background-color: $black;
 	color: $white;
 	text-transform: uppercase;
-	padding: 5px 15px;
+	padding: 5px 20px;
 	border-radius: 3px;
 }
 
