@@ -654,6 +654,16 @@ nav ul li {
   margin-bottom: 15px;
 }
 
+.aboutButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutButtons li:first-child {
+  margin-right: 10px;
+}
+
 .highlight {
   font-weight: 700;
   margin-bottom: 30px;

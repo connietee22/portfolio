@@ -213,6 +213,13 @@ nav {
 	}
 }
 
+.aboutButtons {
+	display: flex;
+	li:first-child {
+		margin-right: 10px;
+	}
+}
+
 .highlight {
 	font-weight: 700;
 	margin-bottom: 30px;
