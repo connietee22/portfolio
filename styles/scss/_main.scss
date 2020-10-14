@@ -25,18 +25,6 @@ header {
 
 // NAV BAR STYLES-----------------------------------------------//
 
-// TRY MENU BUTTON
-// .menuButton {
-// 	// right: 0;
-// 	// top: 0;
-// 	display: none;
-// 	width: 60px;
-// 	height: 60px;
-// 	cursor: pointer;
-// 	transition: all 0.5s ease-in-out;
-// 	border: 3px solid red;
-// }
-
 .hamburger,
 .hamburgerExit {
 	display: none;
@@ -49,7 +37,7 @@ nav {
 	ul {
 		display: flex;
 		li {
-			padding: 10px 15px;
+			padding: 5px 15px;
 		}
 	}
 }
@@ -117,9 +105,9 @@ nav {
 	}
 }
 
-.isVisible {
+.typing {
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
-	border-right: 0.15em solid orange; /* The typewriter cursor */
+	// border-right: 0.15em solid orange; /* The typewriter cursor */
 	white-space: nowrap; /* Keeps the content on a single line */
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 	animation: typing 2.5s steps(30, end), blink-caret 0.75s infinite;
@@ -175,7 +163,6 @@ nav {
 
 .highlight {
 	font-weight: 700;
-	// margin-bottom: 30px;
 	padding-bottom: 0;
 	background: linear-gradient(to top, $orange 50%, transparent 50%);
 }
@@ -280,10 +267,6 @@ nav {
 	}
 	h3 {
 		padding-bottom: 10px;
-	}
-	.bar {
-		font-family: 'Rambla', sans-serif;
-		color: $orange;
 	}
 	a {
 		margin-right: 10px;

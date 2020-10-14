@@ -372,7 +372,8 @@ a.skipLink:focus {
   padding: 5px;
 }
 
-a:focus {
+a:focus,
+a:hover {
   -webkit-box-shadow: 4px 4px 0px #fb8500;
           box-shadow: 4px 4px 0px #fb8500;
 }
@@ -386,6 +387,14 @@ a:focus {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.display {
   display: block;
 }
 
@@ -446,18 +455,17 @@ a {
   color: inherit;
 }
 
-a:hover,
-.button:hover {
-  -webkit-filter: brightness(75%);
-          filter: brightness(75%);
-}
-
 .button {
   background-color: #1c1c1c;
   color: #fff;
   text-transform: uppercase;
   padding: 5px 20px;
   border-radius: 3px;
+}
+
+.bar {
+  font-family: 'Rambla', sans-serif;
+  color: #fb8500;
 }
 
 section {
@@ -515,7 +523,7 @@ nav ul {
 }
 
 nav ul li {
-  padding: 10px 15px;
+  padding: 5px 15px;
 }
 
 .hamburgerExit {
@@ -599,11 +607,9 @@ nav ul li {
   }
 }
 
-.isVisible {
+.typing {
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange;
-  /* The typewriter cursor */
   white-space: nowrap;
   /* Keeps the content on a single line */
   margin: 0 auto;
@@ -797,11 +803,6 @@ nav ul li {
 
 .portfolioDetailsText h3 {
   padding-bottom: 10px;
-}
-
-.portfolioDetailsText .bar {
-  font-family: 'Rambla', sans-serif;
-  color: #fb8500;
 }
 
 .portfolioDetailsText a {

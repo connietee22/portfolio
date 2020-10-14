@@ -35,8 +35,8 @@ a.skipLink:focus {
 	padding: 5px;
 }
 
-a:focus {
-	// outline: 2px solid $lightBlue;
+a:focus,
+a:hover {
 	box-shadow: 4px 4px 0px $orange;
 }
 
@@ -49,6 +49,14 @@ a:focus {
 img {
 	max-width: 100%;
 	height: auto;
+	display: block;
+}
+
+.hidden {
+	display: none;
+}
+
+.display {
 	display: block;
 }
 
@@ -111,10 +119,10 @@ a {
 	color: inherit;
 }
 
-a:hover,
-.button:hover {
-	filter: brightness(75%);
-}
+// a:hover,
+// .button:hover {
+// 	filter: brightness(75%);
+// }
 
 .button {
 	background-color: $black;
@@ -122,6 +130,11 @@ a:hover,
 	text-transform: uppercase;
 	padding: 5px 20px;
 	border-radius: 3px;
+}
+
+.bar {
+	font-family: 'Rambla', sans-serif;
+	color: $orange;
 }
 
 section {
