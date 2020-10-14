@@ -251,7 +251,7 @@ nav {
 	grid-template-columns: repeat(8, 1fr);
 	font-size: clamp(4rem, 5vw, 5rem);
 	color: $black;
-	gap: 50px;
+	gap: 20px 50px;
 	margin-top: 15px;
 	i {
 		text-shadow: 0px 1px 1px $orange;
@@ -263,15 +263,11 @@ nav {
 .portfolio {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	// grid-template-rows: auto;
 	column-gap: 25px;
 	row-gap: 15px;
 	img {
 		border: 2px solid $lightBlue;
 		// box-shadow: 0px 0px 2px $lightBlue;
-	}
-	a:hover {
-		filter: none;
 	}
 }
 
@@ -298,7 +294,6 @@ nav {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	opacity: 0.95;
 }
 
 .portfolioItem:hover .overlay {
@@ -315,14 +310,18 @@ nav {
 	p {
 		font-size: 1.9rem;
 	}
-	top: 20%;
+	top: 30%;
 	padding: 20px;
 	text-align: center;
 	margin: 0 auto;
 }
 
 .portfolioDetailsText {
-	padding-top: 20px;
+	margin: 20px 0px 25px 0px;
+	p:nth-child(2n) {
+		font-weight: 700;
+		font-size: 2rem;
+	}
 	div {
 		margin-bottom: 15px;
 	}
@@ -334,7 +333,7 @@ nav {
 		color: $orange;
 	}
 	a {
-		margin-top: 30px;
+		margin-right: 10px;
 	}
 }
 

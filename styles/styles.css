@@ -701,7 +701,7 @@ nav ul li {
       grid-template-columns: repeat(8, 1fr);
   font-size: clamp(4rem, 5vw, 5rem);
   color: #1c1c1c;
-  gap: 50px;
+  gap: 20px 50px;
   margin-top: 15px;
 }
 
@@ -721,11 +721,6 @@ nav ul li {
 
 .portfolio img {
   border: 2px solid #8ecae6;
-}
-
-.portfolio a:hover {
-  -webkit-filter: none;
-          filter: none;
 }
 
 .portfolioItemContainer {
@@ -764,7 +759,6 @@ nav ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: 0.95;
 }
 
 .portfolioItem:hover .overlay {
@@ -775,7 +769,7 @@ nav ul li {
 .portfolioInformation {
   color: white;
   position: absolute;
-  top: 20%;
+  top: 30%;
   padding: 20px;
   text-align: center;
   margin: 0 auto;
@@ -790,7 +784,12 @@ nav ul li {
 }
 
 .portfolioDetailsText {
-  padding-top: 20px;
+  margin: 20px 0px 25px 0px;
+}
+
+.portfolioDetailsText p:nth-child(2n) {
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 .portfolioDetailsText div {
@@ -807,7 +806,7 @@ nav ul li {
 }
 
 .portfolioDetailsText a {
-  margin-top: 30px;
+  margin-right: 10px;
 }
 
 .textSocialsContainer {
