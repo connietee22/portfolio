@@ -11,9 +11,9 @@
 	.menu .menuScreen {
 		position: fixed;
 		top: 0;
-		left: 50vw;
+		left: 60vw;
 		right: 0;
-		bottom: 0;
+		height: auto;
 		background: $darkBlue;
 		color: $white;
 		z-index: 10;
@@ -30,23 +30,32 @@
 
 	.hamburgerExit {
 		color: $white;
+		position: relative;
+		right: 5vw;
+		margin-bottom: 10px;
 	}
 
 	.menuScreen {
 		height: auto;
-		min-height: 300px;
 	}
 
 	.menuScreen ul {
 		display: flex;
 		flex-direction: column;
+		// padding-bottom: 10px;
 	}
 
-	.menu ul a {
-		font-size: 20px;
-		text-align: center;
-		width: 100%;
-		padding: 30px;
+	.menu ul li:hover {
+		background-color: $midBlue;
+	}
+
+	.menu {
+		a {
+			display: block;
+			font-size: 20px;
+			text-align: center;
+			width: 100%;
+		}
 	}
 
 	.aboutImageContainer {

@@ -514,9 +514,7 @@ nav ul li {
 }
 
 .hamburgerExit {
-  position: relative;
-  top: 30px;
-  right: 30px;
+  top: 10px;
   background: transparent;
 }
 
@@ -930,9 +928,9 @@ footer h2 {
   .menu .menuScreen {
     position: fixed;
     top: 0;
-    left: 50vw;
+    left: 60vw;
     right: 0;
-    bottom: 0;
+    height: auto;
     background: #023047;
     color: #fff;
     z-index: 10;
@@ -951,10 +949,12 @@ footer h2 {
   }
   .hamburgerExit {
     color: #fff;
+    position: relative;
+    right: 5vw;
+    margin-bottom: 10px;
   }
   .menuScreen {
     height: auto;
-    min-height: 300px;
   }
   .menuScreen ul {
     display: -webkit-box;
@@ -965,11 +965,14 @@ footer h2 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .menu ul a {
+  .menu ul li:hover {
+    background-color: #219ebc;
+  }
+  .menu a {
+    display: block;
     font-size: 20px;
     text-align: center;
     width: 100%;
-    padding: 30px;
   }
   .aboutImageContainer {
     display: -webkit-box;

@@ -4,15 +4,18 @@ portfolio.init = () => {
 	$('.hamburger').click(function () {
 		// toggle class show on the menu
 		$('.menu').addClass('show');
+		$('.hamburger').hide();
 	});
 
 	$('.hamburgerExit').click(function () {
 		// toggle class show on the menu
 		$('.menu').removeClass('show');
+		$('.hamburger').show();
 	});
 
 	$('.menuScreen li').click(function () {
 		$('.menu').removeClass('show');
+		$('.hamburger').show();
 	});
 
 	// ON WINDOW SCROLL---------------------------------------------------------------//
