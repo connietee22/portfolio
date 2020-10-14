@@ -21,10 +21,6 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px 0;
-	// transition: top 0.6s;
-	p {
-		font-size: clamp(1.6rem, 1.6vw, 2rem);
-	}
 }
 
 // NAV BAR STYLES-----------------------------------------------//
@@ -126,66 +122,10 @@ nav {
 	padding-bottom: 100px;
 }
 
-// /*** Animated Headline ***/
-// .cd-headline {
-// 	font-size: 20px;
-// 	font-weight: 700;
-// 	font-family: 'Rambla', sans-serif;
-// }
-// .cd-words-wrapper {
-// 	display: inline-block;
-// 	position: relative;
-// 	text-align: left;
-// }
-// .cd-words-wrapper b {
-// 	display: inline-block;
-// 	position: absolute;
-// 	white-space: nowrap;
-// 	left: 0;
-// 	top: 0;
-// }
-// .cd-words-wrapper b.isVisible {
-// 	position: relative;
-// }
-// .no-js .cd-words-wrapper b {
-// 	opacity: 0;
-// }
-// .no-js .cd-words-wrapper b.isVisible {
-// 	opacity: 1;
-// }
-// /* xclip */
-// .cd-headline.clip span {
-// 	display: inline-block;
-// 	padding: 0.2em 0;
-// }
-// .cd-headline.clip .cd-words-wrapper {
-// 	overflow: hidden;
-// 	vertical-align: top;
-// }
-// .cd-headline.clip .cd-words-wrapper::after {
-// 	/* line */
-// 	content: '';
-// 	position: absolute;
-// 	top: 25%;
-// 	right: 0;
-// 	width: 4px;
-// 	height: 50%;
-// 	background-color: #fff;
-// }
-// .cd-headline.clip b {
-// 	opacity: 0;
-// 	font-weight: 700;
-// }
-// .cd-headline b.isVisible {
-// 	opacity: 1;
-// }
-
 .scrollChevron {
 	text-align: center;
 	font-size: 4rem;
 	--animate-duration: 3s;
-	// padding-bottom: 30px;
-	// justify-self: center;
 }
 
 // ABOUT SECTION-----------------------------------------------//
@@ -222,7 +162,7 @@ nav {
 
 .highlight {
 	font-weight: 700;
-	margin-bottom: 30px;
+	// margin-bottom: 30px;
 	padding-bottom: 0;
 	background: linear-gradient(to top, $orange 50%, transparent 50%);
 }
@@ -343,7 +283,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	margin-top: 20px;
+	// margin-top: 20px;
 }
 
 .contactText {
@@ -355,13 +295,23 @@ nav {
 .helloContainer {
 	display: flex;
 	align-items: center;
-	// margin-top: 20px;
+	margin-top: 20px;
 	img {
 		width: 100px;
 		position: relative;
-		top: -5px;
+		top: -15px;
 		left: -10px;
 		transform: rotate(5deg);
+	}
+	highlight {
+		margin: 0;
+	}
+}
+
+.textContainer {
+	padding-right: 15px;
+	p:nth-child(2n) {
+		margin-bottom: 15px;
 	}
 }
 
@@ -372,16 +322,19 @@ form {
 	input,
 	textarea {
 		border: 1px solid $lightBlue;
+		padding: 5px;
 	}
 	label {
 		font-size: 1.9rem;
 		margin: 15px 0 5px;
 	}
+	label:first-child {
+		margin-top: 0;
+	}
 	.button {
 		margin-top: 15px;
 		width: 125px;
-		// padding: 3px 0px;
-		// background-color: $lightBlue;
+		border: 0px;
 	}
 	textarea {
 		resize: none;

@@ -56,7 +56,6 @@ h4,
 nav,
 span,
 label,
-input,
 .button {
 	font-family: $headingfont;
 	text-transform: uppercase;
@@ -64,7 +63,9 @@ input,
 }
 
 p,
-ul {
+ul,
+input,
+textarea {
 	font-family: $bodyfont;
 	font-weight: 400;
 }
@@ -96,7 +97,7 @@ h4 {
 
 ul,
 p {
-	font-size: 1.7rem;
+	font-size: 1.8rem;
 	line-height: 1.5;
 }
 

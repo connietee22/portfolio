@@ -391,7 +391,6 @@ h4,
 nav,
 span,
 label,
-input,
 .button {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
@@ -399,7 +398,9 @@ input,
 }
 
 p,
-ul {
+ul,
+input,
+textarea {
   font-family: "Rambla", sans-serif;
   font-weight: 400;
 }
@@ -431,7 +432,7 @@ h4 {
 
 ul,
 p {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   line-height: 1.5;
 }
 
@@ -492,10 +493,6 @@ header p {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 0;
-}
-
-.navBar p {
-  font-size: clamp(1.6rem, 1.6vw, 2rem);
 }
 
 .hamburger,
@@ -666,7 +663,6 @@ nav ul li {
 
 .highlight {
   font-weight: 700;
-  margin-bottom: 30px;
   padding-bottom: 0;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #fb8500), color-stop(50%, transparent));
   background: linear-gradient(to top, #fb8500 50%, transparent 50%);
@@ -819,7 +815,6 @@ nav ul li {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-top: 20px;
 }
 
 .contactText p:nth-child(2) {
@@ -833,15 +828,28 @@ nav ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 20px;
 }
 
 .helloContainer img {
   width: 100px;
   position: relative;
-  top: -5px;
+  top: -15px;
   left: -10px;
   -webkit-transform: rotate(5deg);
           transform: rotate(5deg);
+}
+
+.helloContainer highlight {
+  margin: 0;
+}
+
+.textContainer {
+  padding-right: 15px;
+}
+
+.textContainer p:nth-child(2n) {
+  margin-bottom: 15px;
 }
 
 form {
@@ -858,6 +866,7 @@ form {
 form input,
 form textarea {
   border: 1px solid #8ecae6;
+  padding: 5px;
 }
 
 form label {
@@ -865,9 +874,14 @@ form label {
   margin: 15px 0 5px;
 }
 
+form label:first-child {
+  margin-top: 0;
+}
+
 form .button {
   margin-top: 15px;
   width: 125px;
+  border: 0px;
 }
 
 form textarea {
