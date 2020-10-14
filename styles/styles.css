@@ -372,6 +372,11 @@ a.skipLink:focus {
   padding: 5px;
 }
 
+a:focus {
+  -webkit-box-shadow: 4px 4px 0px #fb8500;
+          box-shadow: 4px 4px 0px #fb8500;
+}
+
 .wrapper {
   width: 90%;
   max-width: 1200px;
@@ -971,7 +976,6 @@ footer h2 {
   .menu a {
     display: block;
     font-size: 20px;
-    text-align: center;
     width: 100%;
   }
   .aboutImageContainer {

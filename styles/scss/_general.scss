@@ -35,6 +35,11 @@ a.skipLink:focus {
 	padding: 5px;
 }
 
+a:focus {
+	// outline: 2px solid $lightBlue;
+	box-shadow: 4px 4px 0px $orange;
+}
+
 .wrapper {
 	width: 90%;
 	max-width: 1200px;
