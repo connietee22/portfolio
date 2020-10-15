@@ -16,17 +16,18 @@
 	}
 
 	.menu .menuScreen {
+		display: flex;
+		flex-direction: column;
 		position: fixed;
 		top: 0;
 		left: 55vw;
 		right: 0;
-		padding-bottom: 20px;
+
 		height: auto;
 		background: $darkBlue;
 		color: $white;
+		padding-bottom: 20px;
 		z-index: 10;
-		display: flex;
-		flex-direction: column;
 	}
 
 	// displaying hamburger menu and hiding navigation bar in dropdown
@@ -40,9 +41,9 @@
 	}
 
 	.hamburgerExit {
-		color: $white;
 		position: relative;
 		right: 5vw;
+		color: $white;
 		margin-bottom: 10px;
 	}
 
@@ -58,6 +59,7 @@
 		li:hover {
 			background-color: $midBlue;
 		}
+
 		a {
 			display: block;
 			font-size: 20px;
@@ -82,16 +84,20 @@
 	.skills {
 		grid-template-columns: 1fr;
 		gap: 30px;
+
 		ul {
 			list-style-position: inside;
 		}
+
 		.otherSkills {
 			list-style-type: square;
 			order: 3;
 		}
+
 		.tools {
 			order: 2;
 		}
+
 		.skillIcons {
 			grid-template-columns: repeat(4, 1fr);
 		}
@@ -102,11 +108,6 @@
 		grid-template-columns: 1fr;
 		row-gap: 40px;
 	}
-
-	// remove hover overlay on smaller devices that use touch
-	// .overlay {
-	// display: none;
-	// }
 }
 
 // MEDIA QUERY 550PX-----------------------------------------------//

@@ -41,11 +41,6 @@ header {
 	border: 0;
 }
 
-// for hamburger menu show/hide states
-.hidden {
-	display: none;
-}
-
 .display {
 	display: block;
 }
@@ -98,16 +93,17 @@ nav {
 	height: 250px;
 	width: 250px;
 	margin-bottom: 25px;
+
 	img {
-		border-radius: 50%;
 		border: 10px solid $midBlue;
+		border-radius: 50%;
 	}
 }
 
 .typewriterText {
 	display: inline;
-	text-transform: lowercase;
 	padding-bottom: 100px;
+	text-transform: lowercase;
 }
 
 /* The typing effect */
@@ -122,10 +118,9 @@ nav {
 
 .typing {
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
-	// border-right: 0.15em solid orange; /* The typewriter cursor */
 	white-space: nowrap; /* Keeps the content on a single line */
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-	animation: typing 2.5s steps(30, end), blink-caret 0.75s infinite;
+	animation: typing 2s steps(30, end);
 }
 
 .isHidden {
@@ -150,11 +145,11 @@ nav {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	gap: 30px;
-	transition: ease-all 0.5s;
 }
 
 .summary {
 	padding-top: 10px;
+
 	div {
 		margin-bottom: 20px;
 	}
@@ -162,15 +157,16 @@ nav {
 
 .aboutButtons {
 	display: flex;
+
 	li:first-child {
 		margin-right: 10px;
 	}
 }
 
 .highlight {
+	background: linear-gradient(to top, $orange 50%, transparent 50%);
 	font-weight: 700;
 	padding-bottom: 0;
-	background: linear-gradient(to top, $orange 50%, transparent 50%);
 }
 
 // SKILLS SECTION-----------------------------------------------//
@@ -183,6 +179,7 @@ nav {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 40px 90px;
+
 	.otherSkills {
 		list-style-type: square;
 	}
@@ -195,10 +192,11 @@ nav {
 .skillIcons {
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
-	font-size: clamp(4rem, 5vw, 5rem);
-	color: $black;
 	gap: 20px 50px;
+	color: $black;
+	font-size: clamp(4rem, 5vw, 5rem);
 	margin-top: 20px;
+
 	i {
 		text-shadow: 0px 1px 1px $orange;
 	}
@@ -211,6 +209,7 @@ nav {
 	grid-template-columns: 1fr 1fr 1fr;
 	column-gap: 25px;
 	row-gap: 15px;
+
 	img {
 		border: 2px solid $lightBlue;
 	}
@@ -250,34 +249,40 @@ body.hasHover .portfolioItem:hover .overlay {
 }
 
 .portfolioInformation {
-	color: white;
 	position: absolute;
+	top: 30%;
+	margin: 0 auto;
+	color: $white;
+	padding: 20px;
+	text-align: center;
+
 	div {
 		margin-bottom: 30px;
 	}
+
 	p {
 		font-size: 1.9rem;
 	}
-	top: 30%;
-	padding: 20px;
-	text-align: center;
-	margin: 0 auto;
 }
 
 .portfolioDetailsText {
 	margin: 20px 0px 25px 0px;
+
+	h3 {
+		padding-bottom: 10px;
+	}
+
+	div {
+		margin-bottom: 15px;
+	}
+
 	p:nth-child(2n) {
 		font-weight: 700;
 		font-size: 2rem;
 	}
+
 	p:nth-child(3n) {
 		padding-bottom: 15px;
-	}
-	div {
-		margin-bottom: 15px;
-	}
-	h3 {
-		padding-bottom: 10px;
 	}
 
 	p > a:hover,
@@ -332,23 +337,28 @@ form {
 	width: 45%;
 	display: flex;
 	flex-direction: column;
+
 	input,
 	textarea {
 		border: 1px solid $lightBlue;
 		padding: 5px;
 	}
+
 	label {
 		font-size: 1.9rem;
 		margin: 15px 0 5px;
 	}
+
 	label:first-child {
 		margin-top: 0;
 	}
+
 	.button {
 		margin-top: 15px;
 		width: 125px;
 		border: 0px;
 	}
+
 	textarea {
 		resize: none;
 	}
@@ -360,6 +370,7 @@ footer {
 	background-color: $midBlue;
 	color: $white;
 	padding: 20px 0;
+
 	h2 {
 		padding: 0;
 	}
@@ -372,7 +383,7 @@ footer {
 }
 
 .socials {
-	width: 30%;
 	display: flex;
 	justify-content: space-between;
+	width: 30%;
 }

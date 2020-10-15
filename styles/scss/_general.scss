@@ -63,8 +63,8 @@ span,
 label,
 .button {
 	font-family: $headingfont;
-	text-transform: uppercase;
 	font-weight: 500;
+	text-transform: uppercase;
 }
 
 p,
@@ -88,10 +88,10 @@ h2 {
 
 h3 {
 	font-size: 2.6rem;
-	letter-spacing: 3px;
-	color: $midBlue;
 	font-weight: 400;
+	color: $midBlue;
 	padding-bottom: 20px;
+	letter-spacing: 3px;
 	text-shadow: 0px 1px 1px $orange;
 }
 
@@ -120,10 +120,10 @@ a {
 .button {
 	background-color: $black;
 	color: $white;
-	text-transform: uppercase;
+	margin-right: 10px;
 	padding: 5px 20px;
 	border-radius: 3px;
-	margin-right: 10px;
+	text-transform: uppercase;
 }
 
 section {
@@ -133,14 +133,3 @@ section {
 section:nth-child(2n) {
 	background-color: $lightGrey;
 }
-
-// hover activations
-// .on {
-// 	display: none;
-// }
-// body.hasHover .on {
-// 	display: inline;
-// }
-// body.hasHover .off {
-// 	display: none;
-// }

@@ -45,11 +45,11 @@ portfolio.onDropdownClick = () => {
 	}
 };
 
-function watchForHover() {
-	// lastTouchTime is used for ignoring emulated mousemove events
-	// that are fired after touchstart events. Since they're
-	// indistinguishable from real events, we use the fact that they're
-	// fired a few milliseconds after touchstart to filter them.
+// code to detect touch devices to remove the hover state
+// courtesy of Blade, Stackoverflow
+portfolio.watchForHover = () => {
+	// lastTouchTime = will ignore emulated mousemove events fired after touchstart events, which are indistinguishable from real events
+	// setting it to 0 will ignore what is fired a few milliseconds after touchstart to filter them out.
 	let lastTouchTime = 0;
 
 	function enableHover() {
@@ -70,13 +70,7 @@ function watchForHover() {
 	document.addEventListener('mousemove', enableHover, true);
 
 	enableHover();
-}
-
-// portfolio.touchDevice = () => {
-// 	function is_touch_device() {
-// 		return 'ontouchstart' in window || navigator.MaxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
-// 	}
-// };
+};
 
 portfolio.init = () => {
 	// showing nav items on button click
@@ -87,13 +81,8 @@ portfolio.init = () => {
 	portfolio.onDropdownClick();
 	// Triggering sticky nav on window scroll
 	portfolio.triggerNav();
-
+	// to detect touch devices and remove hover
 	portfolio.watchForHover();
-
-	// detecting touch device
-	// if (portfolio.touchDevice()) {
-	// 	$('.overlay').addClass('hidden');
-	// }
 };
 
 $(function () {
