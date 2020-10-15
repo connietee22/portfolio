@@ -20,6 +20,7 @@
 		top: 0;
 		left: 55vw;
 		right: 0;
+		padding-bottom: 20px;
 		height: auto;
 		background: $darkBlue;
 		color: $white;
@@ -78,7 +79,6 @@
 	}
 
 	// SKILLS 768PX-----------------------------------------------//
-
 	.skills {
 		grid-template-columns: 1fr;
 		gap: 30px;

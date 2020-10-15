@@ -445,8 +445,8 @@ p {
 a {
   text-decoration: none;
   color: inherit;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .bar {
@@ -750,16 +750,6 @@ nav ul li {
 }
 
 .overlay {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: #219ebc;
-  overflow: hidden;
-  width: 100%;
-  height: 0%;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -767,9 +757,19 @@ nav ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #219ebc;
+  height: 0%;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .portfolioItem:hover .overlay {
@@ -957,6 +957,7 @@ footer h2 {
     top: 0;
     left: 55vw;
     right: 0;
+    padding-bottom: 20px;
     height: auto;
     background: #023047;
     color: #fff;
