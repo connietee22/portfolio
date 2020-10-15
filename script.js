@@ -1,31 +1,30 @@
 const portfolio = {};
 
+//caching selectors
+$hamburger = $('.hamburger');
+$menu = $('.menu');
+$hamburgExit = $('.hamburgerExit');
+$navBg = $('.navBg');
+
 portfolio.init = () => {
-	$('.hamburger').click(function () {
+	$hamburger.click(function () {
 		// toggle class show on the menu
-		$('.menu').addClass('show');
-		// $('.hamburger').hide();
-		$('.hamburger').removeClass('display');
+		$menu.addClass('show');
+		$hamburger.removeClass('display');
 	});
 
-	$('.hamburgerExit').click(function () {
+	$hamburgExit.click(function () {
 		// toggle class show on the menu
-		$('.menu').removeClass('show');
-		// $('.hamburger').show();
-		$('.hamburger').addClass('display');
+		$menu.removeClass('show');
+		$hamburger.addClass('display');
 	});
-
-	// $('.menuScreen li').click(function () {
-	//     $('.menu').removeClass('show');
-	//     $('.hamburger').show();
-	// });
 
 	// ON WINDOW SCROLL---------------------------------------------------------------//
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 1) {
-			$('.navBg').addClass('sticky');
+			$navBg.addClass('sticky');
 		} else {
-			$('.navBg').removeClass('sticky');
+			$navBg.removeClass('sticky');
 		}
 	});
 
@@ -36,11 +35,10 @@ portfolio.init = () => {
 
 portfolio.resize = () => {
 	const screenWidth = $('body').width();
-	console.log(screenWidth);
 	if (screenWidth < 769) {
 		$('.menuScreen a').click(function () {
-			$('.menu').removeClass('show');
-			$('.hamburger').removeClass('display');
+			$menu.removeClass('show');
+			$hamburger.removeClass('display');
 		});
 	}
 };

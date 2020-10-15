@@ -4,6 +4,13 @@
 		padding: 70px 0;
 	}
 
+	header {
+		a:focus,
+		a:hover {
+			border-bottom: none;
+		}
+	}
+
 	.menu {
 		display: none;
 	}
@@ -37,18 +44,16 @@
 
 	.menuScreen {
 		height: auto;
-	}
-
-	.menuScreen ul {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.menu ul li:hover {
-		background-color: $midBlue;
+		ul {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 
 	.menu {
+		li:hover {
+			background-color: $midBlue;
+		}
 		a {
 			display: block;
 			font-size: 20px;
@@ -62,11 +67,18 @@
 		align-items: center;
 	}
 
+	// SUMMARY 768PX----------------------------------------------//
+	.summary {
+		div {
+			margin-bottom: 30px;
+		}
+	}
+
 	// SKILLS 768PX-----------------------------------------------//
 
 	.skills {
 		grid-template-columns: 1fr;
-		gap: 20px;
+		gap: 30px;
 		ul {
 			list-style-position: inside;
 		}
@@ -85,6 +97,7 @@
 	// PORTFOLIO 768PX-----------------------------------------------//
 	.portfolio {
 		grid-template-columns: 1fr;
+		row-gap: 40px;
 	}
 }
 
@@ -92,6 +105,10 @@
 @media (max-width: 550px) {
 	.textSocialsContainer {
 		flex-direction: column;
+	}
+
+	.textContainer {
+		width: 100%;
 	}
 
 	form {

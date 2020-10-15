@@ -14,6 +14,15 @@ header {
 	p {
 		font-size: 2.5rem;
 	}
+	a {
+		padding-bottom: 5px;
+	}
+	a:focus,
+	a:hover {
+		box-shadow: none;
+		border-bottom: 3px solid $orange;
+		// transition: all 0.3s ease-in-out;
+	}
 }
 
 .navBar {
@@ -33,6 +42,15 @@ header {
 	border: 0;
 }
 
+// for hamburger menu show/hide states
+.hidden {
+	display: none;
+}
+
+.display {
+	display: block;
+}
+
 nav {
 	ul {
 		display: flex;
@@ -43,9 +61,7 @@ nav {
 }
 
 .hamburgerExit {
-	// position: relative;
 	top: 10px;
-	// right: 20px;
 	background: transparent;
 }
 
@@ -131,26 +147,21 @@ nav {
 
 // ABOUT SECTION-----------------------------------------------//
 
-.about {
-	// padding: 70px 0;
-	height: auto;
-}
+// .about {
+// 	height: auto;
+// }
 
 .aboutImageContainer {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	gap: 20px;
+	gap: 30px;
 	transition: ease-all 0.5s;
-}
-
-.illustration {
-	padding-right: 20px;
 }
 
 .summary {
 	padding-top: 10px;
 	div {
-		margin-bottom: 15px;
+		margin-bottom: 20px;
 	}
 }
 
@@ -175,8 +186,8 @@ nav {
 
 .skills {
 	display: grid;
-	grid-template-columns: 2fr 1fr;
-	gap: 50px;
+	grid-template-columns: 1fr 1fr;
+	gap: 40px 90px;
 	.otherSkills {
 		list-style-type: square;
 	}
@@ -192,7 +203,7 @@ nav {
 	font-size: clamp(4rem, 5vw, 5rem);
 	color: $black;
 	gap: 20px 50px;
-	margin-top: 15px;
+	margin-top: 20px;
 	i {
 		text-shadow: 0px 1px 1px $orange;
 	}
@@ -207,7 +218,6 @@ nav {
 	row-gap: 15px;
 	img {
 		border: 2px solid $lightBlue;
-		// box-shadow: 0px 0px 2px $lightBlue;
 	}
 }
 
@@ -262,6 +272,9 @@ nav {
 		font-weight: 700;
 		font-size: 2rem;
 	}
+	p:nth-child(3n) {
+		padding-bottom: 15px;
+	}
 	div {
 		margin-bottom: 15px;
 	}
@@ -279,7 +292,10 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	// margin-top: 20px;
+}
+
+.textContainer {
+	width: 55%;
 }
 
 .contactText {
@@ -312,7 +328,7 @@ nav {
 }
 
 form {
-	width: 60%;
+	width: 45%;
 	display: flex;
 	flex-direction: column;
 	input,

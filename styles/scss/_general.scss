@@ -52,14 +52,6 @@ img {
 	display: block;
 }
 
-.hidden {
-	display: none;
-}
-
-.display {
-	display: block;
-}
-
 // FONT STYLING-----------------------------------------------//
 
 h1,
@@ -111,18 +103,19 @@ h4 {
 ul,
 p {
 	font-size: 1.8rem;
-	line-height: 1.5;
+	line-height: 1.6;
 }
 
 a {
 	text-decoration: none;
 	color: inherit;
+	transition: 0.4s;
 }
 
-// a:hover,
-// .button:hover {
-// 	filter: brightness(75%);
-// }
+.bar {
+	font-family: 'Rambla', sans-serif;
+	color: $orange;
+}
 
 .button {
 	background-color: $black;
@@ -130,11 +123,6 @@ a {
 	text-transform: uppercase;
 	padding: 5px 20px;
 	border-radius: 3px;
-}
-
-.bar {
-	font-family: 'Rambla', sans-serif;
-	color: $orange;
 }
 
 section {

@@ -390,14 +390,6 @@ img {
   display: block;
 }
 
-.hidden {
-  display: none;
-}
-
-.display {
-  display: block;
-}
-
 h1,
 h2,
 h3,
@@ -447,12 +439,19 @@ h4 {
 ul,
 p {
   font-size: 1.8rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.bar {
+  font-family: 'Rambla', sans-serif;
+  color: #fb8500;
 }
 
 .button {
@@ -461,11 +460,6 @@ a {
   text-transform: uppercase;
   padding: 5px 20px;
   border-radius: 3px;
-}
-
-.bar {
-  font-family: 'Rambla', sans-serif;
-  color: #fb8500;
 }
 
 section {
@@ -495,6 +489,17 @@ header p {
   font-size: 2.5rem;
 }
 
+header a {
+  padding-bottom: 5px;
+}
+
+header a:focus,
+header a:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom: 3px solid #fb8500;
+}
+
 .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -514,6 +519,14 @@ header p {
   font-size: 3rem;
   background-color: inherit;
   border: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.display {
+  display: block;
 }
 
 nav ul {
@@ -634,22 +647,14 @@ nav ul li {
   --animate-duration: 3s;
 }
 
-.about {
-  height: auto;
-}
-
 .aboutImageContainer {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr;
       grid-template-columns: 1fr 2fr;
-  gap: 20px;
+  gap: 30px;
   -webkit-transition: ease-all 0.5s;
   transition: ease-all 0.5s;
-}
-
-.illustration {
-  padding-right: 20px;
 }
 
 .summary {
@@ -657,7 +662,7 @@ nav ul li {
 }
 
 .summary div {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .aboutButtons {
@@ -684,9 +689,9 @@ nav ul li {
 .skills {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
-  gap: 50px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 40px 90px;
 }
 
 .skills .otherSkills {
@@ -707,7 +712,7 @@ nav ul li {
   font-size: clamp(4rem, 5vw, 5rem);
   color: #1c1c1c;
   gap: 20px 50px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .skillIcons i {
@@ -797,6 +802,10 @@ nav ul li {
   font-size: 2rem;
 }
 
+.portfolioDetailsText p:nth-child(3n) {
+  padding-bottom: 15px;
+}
+
 .portfolioDetailsText div {
   margin-bottom: 15px;
 }
@@ -819,6 +828,10 @@ nav ul li {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.textContainer {
+  width: 55%;
 }
 
 .contactText p:nth-child(2) {
@@ -857,7 +870,7 @@ nav ul li {
 }
 
 form {
-  width: 60%;
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -928,6 +941,10 @@ footer h2 {
   section {
     padding: 70px 0;
   }
+  header a:focus,
+  header a:hover {
+    border-bottom: none;
+  }
   .menu {
     display: none;
   }
@@ -971,7 +988,7 @@ footer h2 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .menu ul li:hover {
+  .menu li:hover {
     background-color: #219ebc;
   }
   .menu a {
@@ -991,10 +1008,13 @@ footer h2 {
         -ms-flex-align: center;
             align-items: center;
   }
+  .summary div {
+    margin-bottom: 30px;
+  }
   .skills {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 30px;
   }
   .skills ul {
     list-style-position: inside;
@@ -1017,6 +1037,7 @@ footer h2 {
   .portfolio {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    row-gap: 40px;
   }
 }
 
@@ -1026,6 +1047,9 @@ footer h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .textContainer {
+    width: 100%;
   }
   form {
     width: 100%;
