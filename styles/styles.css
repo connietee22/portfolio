@@ -951,7 +951,7 @@ footer h2 {
   .menu .menuScreen {
     position: fixed;
     top: 0;
-    left: 60vw;
+    left: 55vw;
     right: 0;
     height: auto;
     background: #023047;
@@ -968,7 +968,10 @@ footer h2 {
   .hamburger,
   .hamburgerExit {
     display: block;
-    text-align: right;
+  }
+  .hamburgerExit {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
   .hamburgerExit {
     color: #fff;

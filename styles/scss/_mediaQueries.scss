@@ -18,7 +18,7 @@
 	.menu .menuScreen {
 		position: fixed;
 		top: 0;
-		left: 60vw;
+		left: 55vw;
 		right: 0;
 		height: auto;
 		background: $darkBlue;
@@ -32,7 +32,10 @@
 	.hamburger,
 	.hamburgerExit {
 		display: block;
-		text-align: right;
+	}
+
+	.hamburgerExit {
+		align-self: flex-end;
 	}
 
 	.hamburgerExit {

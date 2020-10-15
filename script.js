@@ -19,6 +19,14 @@ portfolio.init = () => {
 		$hamburger.addClass('display');
 	});
 
+	// collapsing menu when option clicked
+	const screenWidth = $('body').width();
+	if (screenWidth < 769) {
+		$('.menuScreen a').click(function () {
+			$menu.removeClass('show');
+		});
+	}
+
 	// ON WINDOW SCROLL---------------------------------------------------------------//
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 1) {
@@ -27,20 +35,6 @@ portfolio.init = () => {
 			$navBg.removeClass('sticky');
 		}
 	});
-
-	$(window).resize(function () {
-		portfolio.resize();
-	});
-};
-
-portfolio.resize = () => {
-	const screenWidth = $('body').width();
-	if (screenWidth < 769) {
-		$('.menuScreen a').click(function () {
-			$menu.removeClass('show');
-			$hamburger.removeClass('display');
-		});
-	}
 };
 
 $(function () {
