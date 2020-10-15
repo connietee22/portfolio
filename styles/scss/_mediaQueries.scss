@@ -106,7 +106,13 @@
 	// PORTFOLIO 768PX-----------------------------------------------//
 	.portfolio {
 		grid-template-columns: 1fr;
-		row-gap: 40px;
+		row-gap: 50px;
+	}
+
+	.portfolioDetailsText {
+		h3 {
+			padding-top: 10px;
+		}
 	}
 }
 
