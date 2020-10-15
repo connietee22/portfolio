@@ -830,6 +830,7 @@ body.hasHover .portfolioItem:hover .overlay {
 
 .textContainer {
   width: 55%;
+  padding-right: 50px;
 }
 
 .contactText p:nth-child(2) {
