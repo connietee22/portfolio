@@ -21,7 +21,6 @@ header {
 	a:hover {
 		box-shadow: none;
 		border-bottom: 3px solid $orange;
-		// transition: all 0.3s ease-in-out;
 	}
 }
 
@@ -63,7 +62,6 @@ nav {
 .hamburgerExit {
 	top: 10px;
 	background: transparent;
-	// width: 60px;
 }
 
 .sticky {
@@ -282,8 +280,13 @@ nav {
 	h3 {
 		padding-bottom: 10px;
 	}
-	a {
-		margin-right: 10px;
+	// a {
+	// 	margin-right: 10px;
+	// }
+	a:hover,
+	a:focus {
+		box-shadow: none;
+		border-bottom: 3px solid $orange;
 	}
 }
 
