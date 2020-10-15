@@ -244,7 +244,7 @@ nav {
 	transition: 0.3s ease;
 }
 
-.portfolioItem:hover .overlay {
+body.hasHover .portfolioItem:hover .overlay {
 	bottom: 0;
 	height: 100%;
 }

@@ -45,11 +45,38 @@ portfolio.onDropdownClick = () => {
 	}
 };
 
-portfolio.touchDevice = () => {
-	function is_touch_device() {
-		return 'ontouchstart' in window || navigator.MaxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+function watchForHover() {
+	// lastTouchTime is used for ignoring emulated mousemove events
+	// that are fired after touchstart events. Since they're
+	// indistinguishable from real events, we use the fact that they're
+	// fired a few milliseconds after touchstart to filter them.
+	let lastTouchTime = 0;
+
+	function enableHover() {
+		if (new Date() - lastTouchTime < 500) return;
+		document.body.classList.add('hasHover');
 	}
-};
+
+	function disableHover() {
+		document.body.classList.remove('hasHover');
+	}
+
+	function updateLastTouchTime() {
+		lastTouchTime = new Date();
+	}
+
+	document.addEventListener('touchstart', updateLastTouchTime, true);
+	document.addEventListener('touchstart', disableHover, true);
+	document.addEventListener('mousemove', enableHover, true);
+
+	enableHover();
+}
+
+// portfolio.touchDevice = () => {
+// 	function is_touch_device() {
+// 		return 'ontouchstart' in window || navigator.MaxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+// 	}
+// };
 
 portfolio.init = () => {
 	// showing nav items on button click
@@ -61,10 +88,12 @@ portfolio.init = () => {
 	// Triggering sticky nav on window scroll
 	portfolio.triggerNav();
 
-	//detecting touch device
-	if (portfolio.touchDevice()) {
-		$('.overlay').addClass('hidden');
-	}
+	portfolio.watchForHover();
+
+	// detecting touch device
+	// if (portfolio.touchDevice()) {
+	// 	$('.overlay').addClass('hidden');
+	// }
 };
 
 $(function () {
