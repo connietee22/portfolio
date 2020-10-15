@@ -815,8 +815,8 @@ nav ul li {
   padding-bottom: 10px;
 }
 
-.portfolioDetailsText a:hover,
-.portfolioDetailsText a:focus {
+.portfolioDetailsText p > a:hover,
+.portfolioDetailsText p > a:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
   border-bottom: 3px solid #fb8500;
