@@ -102,6 +102,11 @@
 		grid-template-columns: 1fr;
 		row-gap: 40px;
 	}
+
+	// remove hover overlay on smaller devices that use touch
+	// .overlay {
+	// display: none;
+	// }
 }
 
 // MEDIA QUERY 550PX-----------------------------------------------//
