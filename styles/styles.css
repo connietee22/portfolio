@@ -715,7 +715,7 @@ nav ul li {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  gap: 20px 50px;
+  gap: 10px 40px;
   color: #1c1c1c;
   font-size: clamp(4rem, 5vw, 5rem);
 }
@@ -1088,6 +1088,10 @@ footer h2 {
   }
   .textContainer p {
     padding-right: 0px;
+  }
+  .skillIcons {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
   form {
     width: 100%;
