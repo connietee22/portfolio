@@ -83,7 +83,7 @@
 	// SKILLS 768PX-----------------------------------------------//
 	.skills {
 		grid-template-columns: 1fr;
-		gap: 30px;
+		gap: 30px 0px;
 
 		ul {
 			list-style-position: inside;
@@ -96,10 +96,9 @@
 
 		.tools {
 			order: 2;
-		}
-
-		.skillIcons {
-			grid-template-columns: repeat(4, 1fr);
+			h4 {
+				margin-bottom: 35px;
+			}
 		}
 	}
 

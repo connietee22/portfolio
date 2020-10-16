@@ -154,6 +154,9 @@ nav {
 
 .summary {
 	padding-top: 10px;
+	p:nth-child(3n) {
+		margin-bottom: 15px;
+	}
 
 	div {
 		margin-bottom: 20px;
@@ -192,18 +195,27 @@ nav {
 
 .tools {
 	grid-column: 1/4;
+	h4 {
+		margin-bottom: 30px;
+	}
 }
 
 .skillIcons {
 	display: grid;
-	grid-template-columns: repeat(8, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	gap: 20px 50px;
 	color: $black;
 	font-size: clamp(4rem, 5vw, 5rem);
-	margin-top: 20px;
-
-	i {
-		text-shadow: 0px 1px 1px $orange;
+	li {
+		display: flex;
+		flex-direction: column;
+		text-transform: uppercase;
+		align-items: center;
+		i {
+			padding-bottom: 10px;
+			height: 50px;
+			text-shadow: 1px 1px 0px $orange;
+		}
 	}
 }
 
