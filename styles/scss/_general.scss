@@ -35,11 +35,6 @@ a.skipLink:focus {
 	padding: 5px;
 }
 
-a:focus,
-a:hover {
-	box-shadow: 4px 4px 0px $orange;
-}
-
 .wrapper {
 	width: 90%;
 	max-width: 1200px;
@@ -124,6 +119,11 @@ a {
 	padding: 5px 20px;
 	border-radius: 3px;
 	text-transform: uppercase;
+}
+
+a.button:hover,
+a.button:focus {
+	box-shadow: 4px 4px 0px $orange;
 }
 
 section {

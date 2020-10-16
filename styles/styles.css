@@ -372,12 +372,6 @@ a.skipLink:focus {
   padding: 5px;
 }
 
-a:focus,
-a:hover {
-  -webkit-box-shadow: 4px 4px 0px #fb8500;
-          box-shadow: 4px 4px 0px #fb8500;
-}
-
 .wrapper {
   width: 90%;
   max-width: 1200px;
@@ -461,6 +455,12 @@ a {
   padding: 5px 20px;
   border-radius: 3px;
   text-transform: uppercase;
+}
+
+a.button:hover,
+a.button:focus {
+  -webkit-box-shadow: 4px 4px 0px #fb8500;
+          box-shadow: 4px 4px 0px #fb8500;
 }
 
 section {
@@ -659,12 +659,23 @@ nav ul li {
   padding-top: 10px;
 }
 
+.summary div {
+  margin-bottom: 20px;
+}
+
 .summary p:nth-child(3n) {
   margin-bottom: 15px;
 }
 
-.summary div {
-  margin-bottom: 20px;
+.summary p a {
+  font-weight: 700;
+}
+
+.summary p a:focus,
+.summary p a:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom: 3px solid #fb8500;
 }
 
 .aboutButtons {
@@ -754,6 +765,12 @@ nav ul li {
   border: 2px solid #8ecae6;
 }
 
+.portfolio a:focus,
+.portfolio a:hover {
+  -webkit-box-shadow: 4px 4px 0px #fb8500;
+          box-shadow: 4px 4px 0px #fb8500;
+}
+
 .portfolioItemContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -835,8 +852,12 @@ body.hasHover .portfolioItem:hover .overlay {
   padding-bottom: 15px;
 }
 
-.portfolioDetailsText p > a:hover,
-.portfolioDetailsText p > a:focus {
+.portfolioDetailsText p a {
+  font-weight: 700;
+}
+
+.portfolioDetailsText p a:hover,
+.portfolioDetailsText p a:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
   border-bottom: 3px solid #fb8500;

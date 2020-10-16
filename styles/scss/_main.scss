@@ -154,12 +154,25 @@ nav {
 
 .summary {
 	padding-top: 10px;
+
+	div {
+		margin-bottom: 20px;
+	}
+
 	p:nth-child(3n) {
 		margin-bottom: 15px;
 	}
 
-	div {
-		margin-bottom: 20px;
+	p {
+		a {
+			font-weight: 700;
+		}
+
+		a:focus,
+		a:hover {
+			box-shadow: none;
+			border-bottom: 3px solid $orange;
+		}
 	}
 }
 
@@ -229,6 +242,10 @@ nav {
 
 	img {
 		border: 2px solid $lightBlue;
+	}
+	a:focus,
+	a:hover {
+		box-shadow: 4px 4px 0px $orange;
 	}
 }
 
@@ -302,10 +319,15 @@ body.hasHover .portfolioItem:hover .overlay {
 		padding-bottom: 15px;
 	}
 
-	p > a:hover,
-	p > a:focus {
-		box-shadow: none;
-		border-bottom: 3px solid $orange;
+	p {
+		a {
+			font-weight: 700;
+		}
+		a:hover,
+		a:focus {
+			box-shadow: none;
+			border-bottom: 3px solid $orange;
+		}
 	}
 }
 
