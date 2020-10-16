@@ -1,4 +1,5 @@
 const portfolio = {};
+const screenWidth = $('body').width();
 
 //caching selectors
 $hamburger = $('.hamburger');
@@ -31,13 +32,16 @@ portfolio.removeDropdown = () => {
 	$hamburgExit.click(function () {
 		// toggle class show on the menu
 		$menu.removeClass('show');
-		$hamburger.addClass('display');
+		if (screenWidth < 769) {
+			$hamburger.addClass('display');
+		} else {
+			$hamburger.removeClass('display');
+		}
 	});
 };
 
 // collapsing menu when nav link is clicked
 portfolio.onDropdownClick = () => {
-	const screenWidth = $('body').width();
 	if (screenWidth < 769) {
 		$('.menuScreen a').click(function () {
 			$menu.removeClass('show');
