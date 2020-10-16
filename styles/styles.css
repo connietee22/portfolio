@@ -473,6 +473,9 @@ section:nth-child(2n) {
 
 header {
   background-color: #8ecae6;
+  background-image: url(../assets/doodlesbg.png);
+  background-size: cover;
+  background-position: center;
   height: 100vh;
   min-height: 600px;
 }
@@ -830,7 +833,10 @@ body.hasHover .portfolioItem:hover .overlay {
 
 .textContainer {
   width: 55%;
-  padding-right: 50px;
+}
+
+.textContainer p {
+  padding-right: 30px;
 }
 
 .contactText p:nth-child(2) {
@@ -908,6 +914,7 @@ footer {
   background-color: #219ebc;
   color: #fff;
   padding: 20px 0;
+  text-transform: uppercase;
 }
 
 footer h2 {
@@ -1056,6 +1063,9 @@ footer h2 {
   }
   .textContainer {
     width: 100%;
+  }
+  .textContainer p {
+    padding-right: 0px;
   }
   form {
     width: 100%;

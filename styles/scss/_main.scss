@@ -2,6 +2,11 @@
 
 header {
 	background-color: $lightBlue;
+	background-image: url(../assets/doodlesbg.png);
+
+	background-size: cover;
+	background-position: center;
+
 	height: 100vh;
 	min-height: 600px;
 	span {
@@ -302,7 +307,9 @@ body.hasHover .portfolioItem:hover .overlay {
 
 .textContainer {
 	width: 55%;
-	padding-right: 50px;
+	p {
+		padding-right: 30px;
+	}
 }
 
 .contactText {
@@ -371,6 +378,7 @@ footer {
 	background-color: $midBlue;
 	color: $white;
 	padding: 20px 0;
+	text-transform: uppercase;
 
 	h2 {
 		padding: 0;
