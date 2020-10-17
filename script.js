@@ -35,6 +35,7 @@ portfolio.removeDropdown = () => {
 		if (screenWidth < 769) {
 			$hamburger.addClass('display');
 		} else {
+			// to prevent rogue hamburger appearing when browser refreshed and expanded
 			$hamburger.removeClass('display');
 		}
 	});
@@ -76,6 +77,12 @@ portfolio.watchForHover = () => {
 	enableHover();
 };
 
+portfolio.toggleBurger = () => {
+	if (screenWidth > 769) {
+		$hamburger.removeClass('display');
+	}
+};
+
 portfolio.init = () => {
 	// showing nav items on button click
 	portfolio.burgerDropdown();
@@ -87,6 +94,9 @@ portfolio.init = () => {
 	portfolio.triggerNav();
 	// to detect touch devices and remove hover
 	portfolio.watchForHover();
+
+	// detecting screen width for burger menu
+	portfolio.toggleBurger();
 };
 
 $(function () {

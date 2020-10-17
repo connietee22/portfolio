@@ -153,7 +153,7 @@ nav {
 }
 
 .summary {
-	padding-top: 10px;
+	padding-top: 20px;
 
 	div {
 		margin-bottom: 20px;
@@ -203,6 +203,7 @@ nav {
 
 	.otherSkills {
 		list-style-type: square;
+		list-style-position: inside;
 	}
 }
 
@@ -216,18 +217,22 @@ nav {
 .skillIcons {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	gap: 10px 40px;
+	gap: 30px 40px;
 	color: $black;
+	margin-top: 20px;
 	font-size: clamp(4rem, 5vw, 5rem);
 	li {
 		display: flex;
 		flex-direction: column;
 		text-transform: uppercase;
 		align-items: center;
+		justify-content: space-between;
+		min-height: 75px;
 		i {
 			padding-bottom: 10px;
-			height: 50px;
-			text-shadow: 1px 1px 0px $orange;
+		}
+		p {
+			color: $darkBlue;
 		}
 	}
 }
@@ -346,16 +351,15 @@ body.hasHover .portfolioItem:hover .overlay {
 	}
 }
 
-.contactText {
-	p:nth-child(2) {
-		margin-bottom: 20px;
-	}
-}
-
 .helloContainer {
 	display: flex;
 	align-items: center;
 	margin-top: 20px;
+
+	h4 {
+		margin-bottom: 20px;
+	}
+
 	img {
 		width: 100px;
 		position: relative;
@@ -363,6 +367,7 @@ body.hasHover .portfolioItem:hover .overlay {
 		left: -10px;
 		transform: rotate(5deg);
 	}
+
 	highlight {
 		margin: 0;
 	}
@@ -370,8 +375,17 @@ body.hasHover .portfolioItem:hover .overlay {
 
 .textContainer {
 	padding-right: 15px;
-	p:nth-child(2n) {
-		margin-bottom: 15px;
+}
+
+.contactDetails {
+	margin-bottom: 22px;
+	p {
+		font-size: 2.1rem;
+	}
+	a:hover,
+	a:focus {
+		box-shadow: none;
+		border-bottom: 3px solid $orange;
 	}
 }
 
@@ -428,5 +442,7 @@ footer {
 .socials {
 	display: flex;
 	justify-content: space-between;
+	font-size: 2.75rem;
 	width: 30%;
+	margin-top: 10px;
 }

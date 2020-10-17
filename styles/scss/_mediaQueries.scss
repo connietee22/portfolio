@@ -113,10 +113,9 @@
 			padding-top: 10px;
 		}
 	}
-}
 
-// MEDIA QUERY 550PX-----------------------------------------------//
-@media (max-width: 550px) {
+	// CONTACT 768PX-----------------------------------------------//
+
 	.textSocialsContainer {
 		flex-direction: column;
 	}
@@ -128,14 +127,17 @@
 		}
 	}
 
-	.skillIcons {
-		grid-template-columns: repeat(3, 1fr);
-	}
-
 	form {
 		width: 100%;
 		margin-top: 40px;
-		padding-top: 30px;
+		padding-top: 50px;
 		border-top: 3px solid $lightBlue;
+	}
+}
+
+// MEDIA QUERY 550PX-----------------------------------------------//
+@media (max-width: 550px) {
+	.skillIcons {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }

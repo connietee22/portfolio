@@ -344,7 +344,7 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   color: #1c1c1c;
 }
 
@@ -405,6 +405,10 @@ textarea {
   font-weight: 400;
 }
 
+span {
+  font-size: 2.2rem;
+}
+
 h1 {
   font-size: 5rem;
   font-weight: 500;
@@ -422,18 +426,18 @@ h3 {
   color: #219ebc;
   padding-bottom: 20px;
   letter-spacing: 3px;
-  text-shadow: 0px 1px 1px #fb8500;
+  text-shadow: 0px 1px 1px #fb8600b5;
 }
 
 h4 {
-  font-size: 2.3rem;
-  margin-bottom: 15px;
+  display: inline-block;
+  font-size: 2.6rem;
 }
 
 ul,
 p {
-  font-size: 1.8rem;
-  line-height: 1.6;
+  font-size: 2rem;
+  line-height: 1.8;
 }
 
 a {
@@ -445,7 +449,7 @@ a {
 
 .bar {
   font-family: 'Rambla', sans-serif;
-  color: #fb8500;
+  color: #fb8600b5;
 }
 
 .button {
@@ -457,10 +461,10 @@ a {
   text-transform: uppercase;
 }
 
-a.button:hover,
-a.button:focus {
-  -webkit-box-shadow: 4px 4px 0px #fb8500;
-          box-shadow: 4px 4px 0px #fb8500;
+a:hover,
+a:focus {
+  -webkit-box-shadow: 4px 4px 0px #fb8600b5;
+          box-shadow: 4px 4px 0px #fb8600b5;
 }
 
 section {
@@ -501,7 +505,7 @@ header a:focus,
 header a:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-bottom: 3px solid #fb8500;
+  border-bottom: 3px solid #fb8600b5;
 }
 
 .navBar {
@@ -656,7 +660,7 @@ nav ul li {
 }
 
 .summary {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .summary div {
@@ -675,7 +679,7 @@ nav ul li {
 .summary p a:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-bottom: 3px solid #fb8500;
+  border-bottom: 3px solid #fb8600b5;
 }
 
 .aboutButtons {
@@ -689,8 +693,8 @@ nav ul li {
 }
 
 .highlight {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #fb8500), color-stop(50%, transparent));
-  background: linear-gradient(to top, #fb8500 50%, transparent 50%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #fb8600b5), color-stop(50%, transparent));
+  background: linear-gradient(to top, #fb8600b5 50%, transparent 50%);
   font-weight: 700;
   padding-bottom: 0;
 }
@@ -709,6 +713,7 @@ nav ul li {
 
 .skills .otherSkills {
   list-style-type: square;
+  list-style-position: inside;
 }
 
 .tools {
@@ -726,8 +731,9 @@ nav ul li {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  gap: 10px 40px;
+  gap: 30px 40px;
   color: #1c1c1c;
+  margin-top: 20px;
   font-size: clamp(4rem, 5vw, 5rem);
 }
 
@@ -743,12 +749,18 @@ nav ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 75px;
 }
 
 .skillIcons li i {
   padding-bottom: 10px;
-  height: 50px;
-  text-shadow: 1px 1px 0px #fb8500;
+}
+
+.skillIcons li p {
+  color: #023047;
 }
 
 .portfolio {
@@ -767,8 +779,8 @@ nav ul li {
 
 .portfolio a:focus,
 .portfolio a:hover {
-  -webkit-box-shadow: 4px 4px 0px #fb8500;
-          box-shadow: 4px 4px 0px #fb8500;
+  -webkit-box-shadow: 4px 4px 0px #fb8600b5;
+          box-shadow: 4px 4px 0px #fb8600b5;
 }
 
 .portfolioItemContainer {
@@ -860,7 +872,7 @@ body.hasHover .portfolioItem:hover .overlay {
 .portfolioDetailsText p a:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-bottom: 3px solid #fb8500;
+  border-bottom: 3px solid #fb8600b5;
 }
 
 .textSocialsContainer {
@@ -883,10 +895,6 @@ body.hasHover .portfolioItem:hover .overlay {
   padding-right: 30px;
 }
 
-.contactText p:nth-child(2) {
-  margin-bottom: 20px;
-}
-
 .helloContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -895,6 +903,10 @@ body.hasHover .portfolioItem:hover .overlay {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 20px;
+}
+
+.helloContainer h4 {
+  margin-bottom: 20px;
 }
 
 .helloContainer img {
@@ -914,8 +926,19 @@ body.hasHover .portfolioItem:hover .overlay {
   padding-right: 15px;
 }
 
-.textContainer p:nth-child(2n) {
-  margin-bottom: 15px;
+.contactDetails {
+  margin-bottom: 22px;
+}
+
+.contactDetails p {
+  font-size: 2.1rem;
+}
+
+.contactDetails a:hover,
+.contactDetails a:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom: 3px solid #fb8600b5;
 }
 
 form {
@@ -984,7 +1007,9 @@ footer h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-size: 2.75rem;
   width: 30%;
+  margin-top: 10px;
 }
 
 @media (max-width: 768px) {
@@ -1095,9 +1120,6 @@ footer h2 {
   .portfolioDetailsText h3 {
     padding-top: 10px;
   }
-}
-
-@media (max-width: 550px) {
   .textSocialsContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1110,14 +1132,17 @@ footer h2 {
   .textContainer p {
     padding-right: 0px;
   }
-  .skillIcons {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
   form {
     width: 100%;
     margin-top: 40px;
-    padding-top: 30px;
+    padding-top: 50px;
     border-top: 3px solid #8ecae6;
+  }
+}
+
+@media (max-width: 550px) {
+  .skillIcons {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
