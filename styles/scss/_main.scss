@@ -219,7 +219,7 @@ nav {
 	grid-template-columns: repeat(4, 1fr);
 	gap: 30px 40px;
 	color: $black;
-	margin-top: 20px;
+	margin: 20px 0px 10px 0px;
 	font-size: clamp(4rem, 5vw, 5rem);
 	li {
 		display: flex;
@@ -275,6 +275,7 @@ nav {
 	align-items: center;
 
 	background-color: $midBlue;
+	opacity: 0.7;
 	height: 0%;
 	width: 100%;
 
@@ -346,9 +347,10 @@ body.hasHover .portfolioItem:hover .overlay {
 
 .textContainer {
 	width: 55%;
-	p {
-		padding-right: 30px;
-	}
+	padding-right: 30px;
+	// p {
+	// 	padding-right: 30px;
+	// }
 }
 
 .helloContainer {
@@ -375,10 +377,18 @@ body.hasHover .portfolioItem:hover .overlay {
 
 .textContainer {
 	padding-right: 15px;
+	.emailCtr {
+		display: flex;
+		button {
+			color: $midBlue;
+			border: none;
+		}
+	}
 }
 
 .contactDetails {
 	margin-bottom: 22px;
+
 	p {
 		font-size: 2.1rem;
 	}

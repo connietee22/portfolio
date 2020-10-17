@@ -83,7 +83,23 @@ portfolio.toggleBurger = () => {
 	}
 };
 
+// on copy button click, save email to clipboard
+$('.contactDetails button').on('click', (e) => {
+	// to create a temporary holder to hold the text
+	let $temp = $('<input>');
+	// append it to the body
+	$('body').append($temp);
+	// reassign temp to the selected email address
+	$temp = $temp.val($('#email').text()).select();
+	// copy the selected text to clipboard
+	document.execCommand('copy');
+	// remove the temporary holder
+	$temp.remove();
+});
+
 portfolio.init = () => {
+	// detecting screen width for burger menu
+	portfolio.toggleBurger();
 	// showing nav items on button click
 	portfolio.burgerDropdown();
 	// removing dropdown when the exit button is clicked
@@ -94,9 +110,6 @@ portfolio.init = () => {
 	portfolio.triggerNav();
 	// to detect touch devices and remove hover
 	portfolio.watchForHover();
-
-	// detecting screen width for burger menu
-	portfolio.toggleBurger();
 };
 
 $(function () {

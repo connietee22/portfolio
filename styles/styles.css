@@ -733,7 +733,7 @@ nav ul li {
       grid-template-columns: repeat(4, 1fr);
   gap: 30px 40px;
   color: #1c1c1c;
-  margin-top: 20px;
+  margin: 20px 0px 10px 0px;
   font-size: clamp(4rem, 5vw, 5rem);
 }
 
@@ -814,6 +814,7 @@ nav ul li {
       -ms-flex-align: center;
           align-items: center;
   background-color: #219ebc;
+  opacity: 0.7;
   height: 0%;
   width: 100%;
   overflow: hidden;
@@ -889,9 +890,6 @@ body.hasHover .portfolioItem:hover .overlay {
 
 .textContainer {
   width: 55%;
-}
-
-.textContainer p {
   padding-right: 30px;
 }
 
@@ -924,6 +922,17 @@ body.hasHover .portfolioItem:hover .overlay {
 
 .textContainer {
   padding-right: 15px;
+}
+
+.textContainer .emailCtr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.textContainer .emailCtr button {
+  color: #219ebc;
+  border: none;
 }
 
 .contactDetails {
